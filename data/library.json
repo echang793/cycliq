@@ -1,0 +1,543 @@
+{
+  "_note": "Original writing for cycliq. Each entry names the public clinical guidance it was checked against. Nothing here is copied from another app or publisher.",
+  "articles": [
+    {
+      "id": "cycle-phases",
+      "title": "The four phases of your cycle",
+      "category": "Cycle basics",
+      "blurb": "What actually happens between one period and the next.",
+      "minutes": 4,
+      "free": true,
+      "tags": ["phases", "hormones", "follicular", "luteal", "ovulation"],
+      "source": "Checked against NICHD and ACOG patient guidance on the menstrual cycle.",
+      "body": "A cycle is counted from the first day of bleeding to the day before the next bleed starts. The menstrual phase is the bleed itself, usually three to seven days, as the uterine lining sheds. The follicular phase overlaps with it and runs until ovulation: follicle-stimulating hormone matures a follicle in an ovary, oestrogen climbs, and the lining rebuilds. Ovulation is a single event, triggered by a surge of luteinising hormone, when the follicle releases an egg. The luteal phase follows: the emptied follicle becomes the corpus luteum and produces progesterone, which keeps the lining stable. If no pregnancy implants, the corpus luteum breaks down, progesterone falls, and the lining sheds again.\n\nThe practical consequence is that the follicular phase is what varies. The luteal phase tends to hold at roughly ten to sixteen days for a given person. That is why a cycle running long is usually a late ovulation, not a long second half."
+    },
+    {
+      "id": "cycle-length-normal",
+      "title": "What counts as a normal cycle length",
+      "category": "Cycle basics",
+      "blurb": "The range is wider than 28 days, and yours can move.",
+      "minutes": 3,
+      "free": true,
+      "tags": ["cycle length", "irregular", "normal"],
+      "source": "Checked against ACOG and NHS guidance on menstrual cycle length.",
+      "body": "Twenty-eight days is an average, not a target. Adult cycles anywhere from about 21 to 35 days are considered typical, and teenagers often run longer and less predictably for the first few years after their first period. What matters more than the number is the pattern: cycles that are consistent for you, with variation of a few days either side, generally point to regular ovulation.\n\nWorth raising with a clinician: cycles consistently shorter than 21 days or longer than 35, a change of more than seven or eight days that persists across several cycles, bleeding between periods, or periods that stop for three months when you are not pregnant. Travel, illness, a new training load, poor sleep and stress can all shift a single cycle without meaning anything is wrong."
+    },
+    {
+      "id": "period-flow",
+      "title": "How much bleeding is too much",
+      "category": "Cycle basics",
+      "blurb": "Heavy bleeding is common, often treatable, and worth naming.",
+      "minutes": 3,
+      "free": true,
+      "tags": ["flow", "heavy bleeding", "clots", "anemia"],
+      "source": "Checked against NHS and ACOG guidance on heavy menstrual bleeding.",
+      "body": "Heavy menstrual bleeding is usually defined by its effect rather than by millilitres: soaking through a pad or tampon every hour or two for several hours, needing double protection, waking at night to change, passing clots bigger than a coin, or bleeding for more than seven days.\n\nHeavy periods are common and have many causes, including fibroids, polyps, adenomyosis, thyroid problems, bleeding disorders and some contraceptive devices. They also cause iron deficiency quietly, which is often what a person actually notices first as breathlessness on stairs or persistent fatigue. None of that is something to wait out. A clinician can check iron levels and look for a cause, and most causes have treatment options that do not start with surgery."
+    },
+    {
+      "id": "cramps",
+      "title": "Period cramps: what helps and what does not",
+      "category": "Symptoms",
+      "blurb": "Prostaglandins, heat, NSAIDs, and when pain is a signal.",
+      "minutes": 4,
+      "free": true,
+      "tags": ["cramps", "dysmenorrhea", "pain", "NSAID"],
+      "source": "Checked against NHS and ACOG guidance on dysmenorrhea.",
+      "body": "Cramps come from prostaglandins, which make the uterine muscle contract to shed its lining. More prostaglandins, stronger contractions, more pain. That mechanism explains why anti-inflammatories such as ibuprofen or naproxen tend to work better than paracetamol for period pain: they reduce prostaglandin production rather than only blunting the pain signal. Taken at the first sign rather than at peak pain, they work considerably better.\n\nHeat genuinely helps and is not a placebo; a heat pack on the lower abdomen is about as effective as a mild analgesic in trials. Movement, sleep and staying hydrated help at the margins.\n\nWhat is not normal: pain that stops you working or studying, pain that painkillers do not touch, pain that starts days before bleeding, or pain during sex or bowel movements. That pattern deserves assessment rather than endurance."
+    },
+    {
+      "id": "pms-vs-pmdd",
+      "title": "PMS and PMDD are not the same thing",
+      "category": "Symptoms",
+      "blurb": "One is uncomfortable. The other is disabling and treatable.",
+      "minutes": 4,
+      "free": false,
+      "tags": ["PMS", "PMDD", "mood", "luteal"],
+      "source": "Checked against ACOG and NHS guidance on PMS and premenstrual dysphoric disorder.",
+      "body": "Premenstrual symptoms show up in the luteal phase, in the week or so before bleeding, and lift once the period starts. Bloating, tender breasts, irritability, cravings and low energy are the common ones.\n\nPremenstrual dysphoric disorder is a distinct diagnosis, not severe PMS by another name. It is defined by marked mood symptoms — depressed mood, anger, hopelessness, anxiety, feeling out of control — that appear reliably in the luteal phase, remit within a few days of bleeding starting, and interfere with work or relationships. The timing is the diagnostic feature, which is exactly what a tracked log can demonstrate.\n\nThat matters because PMDD responds to treatment: SSRIs used continuously or only in the luteal phase, some combined hormonal contraceptives, and cognitive behavioural therapy all have evidence behind them. Two to three cycles of daily symptom logging is usually what a clinician needs to make the call."
+    },
+    {
+      "id": "spotting",
+      "title": "Spotting between periods",
+      "category": "Symptoms",
+      "blurb": "Common causes, and the ones worth a call.",
+      "minutes": 3,
+      "free": false,
+      "tags": ["spotting", "breakthrough bleeding", "implantation"],
+      "source": "Checked against NHS guidance on bleeding between periods.",
+      "body": "Light bleeding outside a period has a long list of ordinary causes: starting or changing hormonal contraception, missed pills, ovulation itself in some people, an IUD in its first months, and irritation after sex. Around a third of people notice occasional mid-cycle spotting.\n\nThere are causes that need looking at, though, and they are not distinguishable by how the bleeding looks: cervical polyps, infection including chlamydia, cervical or endometrial changes, and in pregnancy, bleeding that needs urgent assessment. Bleeding after sex, bleeding after menopause, or new persistent spotting across several cycles should all be checked rather than tracked and waited out. Logging when it happens relative to your cycle gives a clinician something concrete to work from."
+    },
+    {
+      "id": "discharge-guide",
+      "title": "Reading vaginal discharge across the cycle",
+      "category": "Symptoms",
+      "blurb": "It changes on purpose, and the changes are informative.",
+      "minutes": 3,
+      "free": false,
+      "tags": ["discharge", "cervical mucus", "fertility signs"],
+      "source": "Checked against NHS and NICHD guidance on cervical mucus and vaginal health.",
+      "body": "Cervical mucus responds to oestrogen, so it follows the cycle. After a period it is often scant or sticky. As oestrogen rises it becomes creamy, then watery, then around ovulation clear, slippery and stretchy — the egg-white texture that fertility awareness methods look for, which helps sperm survive and travel. After ovulation, progesterone thickens it again into something tacky and opaque.\n\nWhat is not part of that rhythm: a grey or fishy-smelling discharge, which often means bacterial vaginosis; thick clumpy white with itching, which suggests thrush; green or frothy discharge; or any discharge with pelvic pain, fever or bleeding. Those are infections or something else, not cycle signs, and they need treatment rather than tracking."
+    },
+    {
+      "id": "bbt-tracking",
+      "title": "Basal body temperature, and what it can and cannot tell you",
+      "category": "Fertility",
+      "blurb": "It confirms ovulation happened. It does not predict it.",
+      "minutes": 4,
+      "free": false,
+      "tags": ["BBT", "temperature", "ovulation", "fertility awareness"],
+      "source": "Checked against NICHD and ACOG guidance on fertility awareness methods.",
+      "body": "After ovulation, progesterone raises resting body temperature by roughly 0.2 to 0.5°C. Measured at the same time every morning before getting up, that shift is visible as a sustained rise over three days above the previous six days' average.\n\nThe limitation is the important part: the rise happens after the egg is released. By the time you see it, the fertile window for that cycle is closing. BBT is therefore good for confirming that you ovulated and for measuring your own luteal phase length across cycles — which is what lets an app stop assuming fourteen days and use your actual number. It is poor for timing sex in the current cycle.\n\nAlcohol, a broken night, illness, a late reading or a different thermometer all move the number. One odd morning is noise; the pattern across a cycle is the signal."
+    },
+    {
+      "id": "fertile-window",
+      "title": "The fertile window is about six days",
+      "category": "Fertility",
+      "blurb": "Five days before ovulation, plus the day itself.",
+      "minutes": 4,
+      "free": true,
+      "tags": ["fertile window", "ovulation", "conception", "TTC"],
+      "source": "Checked against NICHD and ACOG guidance on conception timing.",
+      "body": "An egg survives around 12 to 24 hours after release. Sperm can survive up to about five days in fertile cervical mucus. Conception is therefore possible from roughly five days before ovulation through the day of ovulation, with the highest chance in the two or three days immediately before it.\n\nThis is why calendar-only predictions are limited. In a well-known study, only about 14% of people with 28-day cycles ovulated on day 14; the most common day was 16, and the range ran from day 11 to day 20. A calendar can give a reasonable window; it cannot give a day.\n\nFor trying to conceive, sex every one to two days across the window outperforms trying to hit a single date, and removes the need to be right about which day it is."
+    },
+    {
+      "id": "lh-tests",
+      "title": "How ovulation tests work",
+      "category": "Fertility",
+      "blurb": "LH surges before release, which is the useful part.",
+      "minutes": 3,
+      "free": false,
+      "tags": ["LH", "OPK", "ovulation test", "TTC"],
+      "source": "Checked against NICHD guidance on ovulation prediction kits.",
+      "body": "Ovulation predictor kits detect luteinising hormone in urine. LH surges roughly 24 to 36 hours before the egg is released, which makes a positive test genuinely predictive rather than merely confirmatory — its advantage over temperature.\n\nTo catch a surge that can last less than a day, test once or twice daily starting a few days before ovulation is expected, ideally in the afternoon or evening, and avoid drinking large amounts of fluid beforehand. A positive means the window is open now: the following two days are the highest-probability days.\n\nCaveats worth knowing. People with PCOS often have chronically elevated LH, so tests can read positive without ovulation following. Some cycles produce a surge with no egg released. And a positive test says a surge happened, not that a cycle was fertile — which is why pairing it with temperature, mucus or a period that arrives on schedule gives a fuller picture."
+    },
+    {
+      "id": "trying-to-conceive-basics",
+      "title": "How long conception usually takes",
+      "category": "Fertility",
+      "blurb": "Most people conceive within a year. Here is when to ask for help.",
+      "minutes": 4,
+      "free": false,
+      "tags": ["TTC", "infertility", "conception"],
+      "source": "Checked against ACOG and NHS guidance on infertility assessment.",
+      "body": "Among couples having regular unprotected sex, roughly 80% conceive within a year and around 90% within two. Month to month, the chance for a healthy couple in their late twenties is about one in four or five per cycle, which means several months without success is statistically ordinary rather than a sign of a problem.\n\nThe usual thresholds for seeking assessment: after twelve months of trying under age 35, after six months at 35 or over, and straight away if there are known factors — absent or very irregular periods, known endometriosis or PCOS, previous pelvic surgery or infection, two or more miscarriages, or a partner with known sperm issues.\n\nAssessment is not dramatic. It typically starts with bloodwork to confirm ovulation, a check of the fallopian tubes, and a semen analysis, which alone identifies a contributing factor in about a third of cases."
+    },
+    {
+      "id": "implantation-signs",
+      "title": "Early pregnancy signs, and why they mimic PMS",
+      "category": "Fertility",
+      "blurb": "Progesterone does the same things either way.",
+      "minutes": 3,
+      "free": false,
+      "tags": ["early pregnancy", "two week wait", "symptoms"],
+      "source": "Checked against NHS and ACOG guidance on early pregnancy.",
+      "body": "In the luteal phase, progesterone is high whether or not conception happened. That single fact explains why sore breasts, fatigue, bloating, mood changes and mild cramping cannot distinguish an early pregnancy from an ordinary premenstrual week. Symptom-reading during the two-week wait is not informative, however much it feels like it should be.\n\nWhat does distinguish them is timing and testing. Implantation typically occurs 6 to 12 days after ovulation, and hCG only becomes detectable in urine a few days after that. A test taken on the day a period is due is reasonably reliable; taken earlier it produces false negatives.\n\nLight spotting around implantation happens for some people, but most early pregnancies have no bleeding at all, and its absence means nothing."
+    },
+    {
+      "id": "pregnancy-first-trimester",
+      "title": "First trimester: weeks 1 to 13",
+      "category": "Pregnancy",
+      "blurb": "What develops, what you feel, what to arrange.",
+      "minutes": 5,
+      "free": false,
+      "tags": ["pregnancy", "first trimester", "nausea"],
+      "source": "Checked against NHS and ACOG antenatal care guidance.",
+      "body": "Dating counts from the first day of the last period, so the first two weeks precede conception — an artefact of the calendar, not a mistake. By the end of week 8 the embryo has a beating heart, limb buds and the beginnings of every major organ system. By week 13 it is recognisably a fetus, around 7 cm long.\n\nSymptoms peak in this trimester for most people: nausea often worst between weeks 6 and 12, exhaustion that sleep does not fix, tender breasts, and food aversions. Nausea severe enough to prevent keeping fluids down is hyperemesis gravidarum and needs treatment, not tolerance.\n\nPractical steps: 400 micrograms of folic acid daily, ideally started before conception; book antenatal care early; stop alcohol and smoking; check any existing medication with a clinician rather than stopping it unilaterally."
+    },
+    {
+      "id": "pregnancy-second-trimester",
+      "title": "Second trimester: weeks 14 to 27",
+      "category": "Pregnancy",
+      "blurb": "Usually the easiest stretch, and the anatomy scan.",
+      "minutes": 4,
+      "free": false,
+      "tags": ["pregnancy", "second trimester", "anatomy scan", "movement"],
+      "source": "Checked against NHS and ACOG antenatal care guidance.",
+      "body": "Nausea usually settles and energy returns. The bump becomes visible, and somewhere between weeks 16 and 24 most people feel movement for the first time — earlier in second pregnancies, since the sensation is recognised rather than learned.\n\nThe anatomy scan around weeks 18 to 22 checks growth, the placenta, and the development of the heart, brain, spine, kidneys and limbs. Glucose screening for gestational diabetes usually falls between weeks 24 and 28.\n\nCommon and normal: round ligament pain as the uterus stretches, heartburn, nasal congestion, mild swelling, and Braxton Hicks tightenings that are irregular and painless. Not normal, and needing same-day contact: any bleeding, severe or persistent headache, visual changes, sudden swelling of the face or hands, upper abdominal pain, or reduced movement once a pattern is established."
+    },
+    {
+      "id": "pregnancy-third-trimester",
+      "title": "Third trimester: weeks 28 to birth",
+      "category": "Pregnancy",
+      "blurb": "Movement patterns, labour signs, and what needs a call.",
+      "minutes": 5,
+      "free": false,
+      "tags": ["pregnancy", "third trimester", "labour", "kick counting"],
+      "source": "Checked against NHS, ACOG and RCOG guidance on fetal movement and labour.",
+      "body": "Fetal movements matter in this trimester. There is no universal number of kicks per hour; what counts is your baby's own pattern. A reduction in that pattern is a reason to contact a midwife or maternity unit the same day, every time, without waiting to see if it improves and without trying cold drinks or sugar first. Movements do not slow down before labour.\n\nBraxton Hicks tightenings are irregular, do not intensify and often stop if you change activity. Labour contractions become longer, stronger and closer together and continue regardless of what you do. Timing them — duration and the gap between starts — is what a midwife will ask for.\n\nCall immediately for: waters breaking, especially if the fluid is green or bloody; any vaginal bleeding; severe headache, visual changes or sudden swelling; or reduced movements."
+    },
+    {
+      "id": "due-date-accuracy",
+      "title": "Your due date is a midpoint, not a deadline",
+      "category": "Pregnancy",
+      "blurb": "Only about 4% of babies arrive on it.",
+      "minutes": 3,
+      "free": false,
+      "tags": ["due date", "EDD", "Naegele"],
+      "source": "Checked against ACOG guidance on estimating due date.",
+      "body": "The standard estimate adds 280 days to the first day of the last period, which assumes a 28-day cycle with ovulation on day 14. If your cycles run longer or shorter, that estimate is off by the same amount, which is why a first-trimester ultrasound — accurate to within about five days — is used to redate a pregnancy when the two disagree meaningfully.\n\nBirth clusters around the date rather than landing on it: roughly 4% of babies are born on the estimated day, and most arrive within two weeks either side. Term is defined as 37 to 42 weeks, and the distinction between early term, full term and late term is clinically real.\n\nA due date is best treated as the middle of a range, not as a deadline you are failing to meet."
+    },
+    {
+      "id": "pcos-overview",
+      "title": "PCOS: what it is and how it is diagnosed",
+      "category": "Conditions",
+      "blurb": "Two of three features, and a lot of variation between people.",
+      "minutes": 5,
+      "free": false,
+      "tags": ["PCOS", "androgens", "insulin", "irregular cycles"],
+      "source": "Checked against ACOG and international evidence-based PCOS guideline summaries.",
+      "body": "Polycystic ovary syndrome is a hormonal condition affecting somewhere around one in ten people of reproductive age. Diagnosis usually rests on two of three features: irregular or absent ovulation, clinical or biochemical signs of excess androgens such as coarse hair growth, persistent acne or scalp hair thinning, and polycystic-appearing ovaries on ultrasound. Other causes have to be excluded first, notably thyroid disease and raised prolactin.\n\nThe name is misleading. The follicles seen on a scan are not cysts, and a scan alone does not diagnose the syndrome. Presentation varies widely: some people have irregular cycles with no skin or hair signs, others the reverse.\n\nInsulin resistance is common and drives much of the picture, which is why management often includes movement and dietary changes alongside medication. PCOS also carries a raised long-term risk of type 2 diabetes, which is worth monitoring even in years when fertility is not the concern."
+    },
+    {
+      "id": "pcos-managing",
+      "title": "Living with PCOS",
+      "category": "Conditions",
+      "blurb": "What actually moves the needle on symptoms.",
+      "minutes": 4,
+      "free": false,
+      "tags": ["PCOS", "management", "metformin", "cycle regulation"],
+      "source": "Checked against ACOG and international evidence-based PCOS guideline summaries.",
+      "body": "Treatment targets whichever symptoms matter to you rather than the label. For irregular cycles and endometrial protection, combined hormonal contraception or cyclical progestogen is standard. For androgen symptoms, combined contraception plus, in some cases, an anti-androgen. For insulin resistance, metformin. For conception, ovulation induction with letrozole is now generally first line ahead of clomifene.\n\nRegular movement and modest weight change improve insulin sensitivity and often restore ovulation in people carrying extra weight; the mechanism is metabolic rather than cosmetic, and even a small change can restore cycles.\n\nWhat does not have strong evidence: elimination diets marketed specifically for PCOS, most supplement stacks, and the idea that the condition can be cured. It is managed, often well, and the management changes with what you need at that stage of life."
+    },
+    {
+      "id": "endometriosis-overview",
+      "title": "Endometriosis: why diagnosis takes so long",
+      "category": "Conditions",
+      "blurb": "Average delay is years. Knowing the pattern shortens it.",
+      "minutes": 5,
+      "free": false,
+      "tags": ["endometriosis", "pelvic pain", "diagnosis"],
+      "source": "Checked against NHS, ACOG and ESHRE endometriosis guidance.",
+      "body": "Endometriosis is tissue similar to the uterine lining growing outside the uterus, most often on the ovaries, ligaments and pelvic peritoneum. It affects roughly one in ten people of reproductive age, and diagnosis is delayed by an average of several years — partly because severe period pain gets normalised, and partly because imaging often looks normal.\n\nThe pattern that should prompt referral: pain that limits daily activity, pain starting before the bleeding does, deep pain during sex, pain passing stool or urine around a period, pelvic pain on non-bleeding days, and fatigue disproportionate to the bleed. Difficulty conceiving is often how it is first found.\n\nThe extent of disease correlates poorly with pain: minimal disease can hurt severely and extensive disease can be silent. A clear, dated symptom record is one of the most useful things to bring to that first appointment."
+    },
+    {
+      "id": "endometriosis-treatment",
+      "title": "Treatment options for endometriosis",
+      "category": "Conditions",
+      "blurb": "Pain control, hormonal suppression, surgery, and fertility.",
+      "minutes": 4,
+      "free": false,
+      "tags": ["endometriosis", "treatment", "laparoscopy"],
+      "source": "Checked against NHS, ACOG and ESHRE endometriosis guidance.",
+      "body": "Treatment is chosen around your goal — pain, fertility, or both — rather than around the disease stage. First-line pain management usually pairs anti-inflammatories with hormonal suppression: combined contraception taken continuously, progestogen-only options, or a hormonal IUD, all aimed at reducing cyclical stimulation of the lesions. GnRH agonists or antagonists with add-back therapy are a further step.\n\nLaparoscopic surgery can both confirm the diagnosis and excise or ablate lesions, and often improves pain, though symptoms can return. For fertility, surgery helps in some situations and assisted reproduction in others; that decision depends on age, ovarian reserve and where the disease sits.\n\nPelvic physiotherapy and pain-management programmes are genuinely useful for the muscle guarding and central sensitisation that build up over years of pain, and are under-offered."
+    },
+    {
+      "id": "fibroids",
+      "title": "Fibroids",
+      "category": "Conditions",
+      "blurb": "Very common, often silent, sometimes the reason for heavy periods.",
+      "minutes": 3,
+      "free": false,
+      "tags": ["fibroids", "heavy bleeding", "pelvic pressure"],
+      "source": "Checked against NHS and ACOG guidance on uterine fibroids.",
+      "body": "Fibroids are non-cancerous growths of uterine muscle. They are extremely common — a majority of people develop at least one by age 50 — and most cause no symptoms at all.\n\nWhen they do, it depends on position rather than size. Fibroids bulging into the uterine cavity tend to cause heavy or prolonged bleeding; those growing outward cause pressure, urinary frequency, constipation or back pain. Some affect fertility or pregnancy, most do not.\n\nOptions run from doing nothing, through medical management of the bleeding with a hormonal IUD or tranexamic acid, to uterine artery embolisation and surgical removal that can preserve the uterus. Fibroids usually shrink after menopause. The main reason to investigate heavy bleeding is not the fibroid itself but the iron deficiency it quietly causes."
+    },
+    {
+      "id": "thyroid-and-cycles",
+      "title": "Thyroid problems show up in your cycle",
+      "category": "Conditions",
+      "blurb": "An easily missed cause of irregular or heavy periods.",
+      "minutes": 3,
+      "free": false,
+      "tags": ["thyroid", "irregular cycles", "fatigue"],
+      "source": "Checked against NHS and ACOG guidance on thyroid disease and menstruation.",
+      "body": "Thyroid hormone influences the hormonal axis that drives ovulation, so thyroid disease frequently presents as a cycle change. An underactive thyroid tends toward heavier, longer or more frequent periods, alongside fatigue, cold intolerance, constipation and weight gain. An overactive thyroid tends toward lighter, shorter or absent periods, with heat intolerance, palpitations, anxiety and weight loss.\n\nBoth can reduce fertility and both raise miscarriage risk if untreated, which is why thyroid function is one of the first blood tests ordered when cycles become irregular or conception is slow. Postpartum thyroiditis is also common and often mistaken for ordinary new-parent exhaustion.\n\nIt is a simple blood test and a treatable condition, which makes it worth naming rather than assuming irregular cycles are just how yours are."
+    },
+    {
+      "id": "birth-control-methods",
+      "title": "Comparing contraceptive methods",
+      "category": "Birth control",
+      "blurb": "Effectiveness in practice, not in theory.",
+      "minutes": 5,
+      "free": true,
+      "tags": ["contraception", "IUD", "pill", "implant"],
+      "source": "Checked against NHS and ACOG contraception guidance.",
+      "body": "Effectiveness is best compared with typical use rather than perfect use, because typical use includes real life. Implants and IUDs, both hormonal and copper, are over 99% effective with typical use because there is nothing to remember. The injection sits around 94%. The pill, patch and ring are about 91% with typical use against 99% with perfect use — the gap is missed doses. Condoms are around 82% typically. Fertility awareness methods range widely, from about 77% to 98%, depending entirely on the method's rigour and the training behind it.\n\nBeyond effectiveness, the questions that decide the choice are: do you want to avoid hormones, do you want periods to stop or stay, do you need STI protection, how soon might you want to conceive, and can you take something daily? There is no single best method, only the one that fits the constraints you actually have."
+    },
+    {
+      "id": "coming-off-birth-control",
+      "title": "What happens when you stop hormonal contraception",
+      "category": "Birth control",
+      "blurb": "Return of fertility, and why the first cycles look odd.",
+      "minutes": 4,
+      "free": false,
+      "tags": ["contraception", "stopping the pill", "fertility return"],
+      "source": "Checked against NHS and ACOG contraception guidance.",
+      "body": "For the pill, patch, ring, implant and IUDs, fertility returns quickly — ovulation can occur within a few weeks, and pregnancy in the first cycle is possible. The injection is the exception: it can take several months to a year after the last dose for ovulation to return.\n\nThe first few cycles off hormonal contraception are often irregular, and any bleed you had on the pill was a withdrawal bleed rather than a true period, so the comparison point is not what you think it is. Give it about three months before drawing conclusions.\n\nWhat sometimes emerges is not caused by stopping: heavy or painful periods, acne or irregular cycles that the contraception had been masking. If cycles have not returned after three months, or symptoms are severe, that is worth investigating rather than waiting on."
+    },
+    {
+      "id": "emergency-contraception",
+      "title": "Emergency contraception: the timing matters",
+      "category": "Birth control",
+      "blurb": "Options, windows, and one thing many people do not know.",
+      "minutes": 3,
+      "free": false,
+      "tags": ["emergency contraception", "morning after pill", "copper IUD"],
+      "source": "Checked against NHS and ACOG emergency contraception guidance.",
+      "body": "There are three options, and they are not equivalent. A copper IUD fitted within five days is the most effective by a wide margin, over 99%, and can stay as ongoing contraception. Ulipristal acetate works up to five days after sex. Levonorgestrel works up to three days and is less effective the longer you wait — take it as soon as possible.\n\nTwo details that are often missed. Levonorgestrel is less effective at higher body weight, and ulipristal or a copper IUD may be recommended instead. And starting or restarting hormonal contraception too soon after ulipristal can blunt its effect; there is a specified waiting period.\n\nEmergency contraception works by delaying ovulation. It does not end an existing pregnancy, and it does not work if ovulation has already happened — which is why the same-day timing matters more than the label's outer limit."
+    },
+    {
+      "id": "perimenopause-signs",
+      "title": "The first signs of perimenopause",
+      "category": "Menopause",
+      "blurb": "It starts earlier than most people expect.",
+      "minutes": 4,
+      "free": false,
+      "tags": ["perimenopause", "hot flashes", "irregular cycles"],
+      "source": "Checked against NHS, NAMS and ACOG guidance on the menopause transition.",
+      "body": "Perimenopause is the transition before periods stop for good, and it commonly begins in the mid-forties, sometimes the late thirties. It lasts on average four years, sometimes ten.\n\nThe first sign is usually a persistent change in cycle length of seven days or more, followed later by skipped cycles and gaps of 60 days or longer. Because oestrogen fluctuates rather than simply declining, symptoms come and go unpredictably: hot flashes, night sweats, disrupted sleep, mood changes and anxiety, brain fog, joint aches, vaginal dryness and changes in libido. Periods can become heavier before they become lighter.\n\nMenopause itself is a single retrospective point — twelve consecutive months without a period. Everything before that is perimenopause, and contraception is still needed during it, because ovulation still happens intermittently."
+    },
+    {
+      "id": "menopause-treatment",
+      "title": "Managing menopause symptoms",
+      "category": "Menopause",
+      "blurb": "What works, and how the risk picture actually reads.",
+      "minutes": 5,
+      "free": false,
+      "tags": ["menopause", "HRT", "hot flashes", "vaginal dryness"],
+      "source": "Checked against NHS, NAMS and ACOG guidance on menopause management.",
+      "body": "Hormone therapy remains the most effective treatment for hot flashes and night sweats, and it also protects bone density. The risk picture is more nuanced than the headlines of the early 2000s suggested: for most healthy people starting within ten years of menopause and under 60, benefits generally outweigh risks. Transdermal oestrogen avoids the small increase in clot risk seen with oral forms. Anyone with a uterus needs a progestogen alongside oestrogen to protect the endometrium.\n\nVaginal dryness and urinary symptoms respond well to local vaginal oestrogen, which is absorbed minimally and is suitable for many people who cannot take systemic therapy.\n\nNon-hormonal options with evidence include certain SSRIs and SNRIs, gabapentin, and cognitive behavioural therapy for hot flashes and sleep. Cooling strategies and trigger avoidance help at the edges. The choice is individual, and worth a proper conversation rather than a leaflet."
+    },
+    {
+      "id": "bone-health",
+      "title": "Bone health after 40",
+      "category": "Menopause",
+      "blurb": "Oestrogen loss accelerates bone loss. Loading slows it.",
+      "minutes": 3,
+      "free": false,
+      "tags": ["bone density", "osteoporosis", "calcium", "vitamin D"],
+      "source": "Checked against NHS and NAMS guidance on bone health after menopause.",
+      "body": "Bone density peaks in the late twenties and declines slowly afterwards, then faster in the years around menopause as oestrogen falls — the sharpest loss happens in roughly the first five years after the final period.\n\nWhat helps is mechanical loading and adequate substrate. Resistance training and impact activity signal bone to remodel; swimming and cycling, valuable as they are, do not. Adequate calcium, preferably from food, and vitamin D sufficient to absorb it are the baseline. Smoking and heavy alcohol accelerate loss.\n\nRisk assessment tools estimate ten-year fracture risk from age, history and a few other factors, and a DEXA scan measures density directly. Both are worth asking about if you have a family history of hip fracture, an early menopause, long-term steroid use, or a fracture from a minor fall."
+    },
+    {
+      "id": "iron-and-periods",
+      "title": "Periods, iron and the fatigue nobody explains",
+      "category": "Wellbeing",
+      "blurb": "Heavy bleeding depletes iron faster than diet replaces it.",
+      "minutes": 3,
+      "free": false,
+      "tags": ["iron", "anemia", "ferritin", "fatigue"],
+      "source": "Checked against NHS guidance on iron deficiency anaemia.",
+      "body": "Menstrual blood loss is the most common cause of iron deficiency in people who menstruate, and it develops slowly enough that the symptoms get attributed to a busy life: fatigue, breathlessness on stairs, poor concentration, hair shedding, cold hands, restless legs.\n\nIron deficiency exists before anaemia does. A full blood count can look normal while ferritin — the storage measure — is already low, so it is worth asking for ferritin specifically rather than accepting that the blood count was fine.\n\nDietary iron from meat is absorbed better than from plants; vitamin C alongside plant sources improves absorption, while tea and coffee with meals reduce it. Where supplements are needed, alternate-day dosing is often absorbed better and tolerated better than daily. If heavy bleeding is the cause, treating the bleeding is part of treating the deficiency."
+    },
+    {
+      "id": "exercise-and-cycle",
+      "title": "Training across your cycle",
+      "category": "Wellbeing",
+      "blurb": "What the evidence supports, and what is overstated.",
+      "minutes": 4,
+      "free": false,
+      "tags": ["exercise", "training", "performance", "RED-S"],
+      "source": "Checked against IOC consensus statements on RED-S and published reviews of cycle-based training.",
+      "body": "The popular version — train hard in the follicular phase, back off in the luteal — outruns the evidence. Reviews of cycle-phase-based training find effects that are small and highly variable between individuals. If you feel stronger at a particular point in your cycle, that is a real observation about you and worth using; it is not a universal rule.\n\nWhat is well established is the other direction. Under-fuelling relative to training load suppresses the hormonal axis and causes cycles to become irregular or stop — relative energy deficiency in sport. A period that disappears with heavy training is not a sign of fitness; it is a signal of energy deficit with consequences for bone density and long-term health.\n\nExercise reliably reduces period pain and premenstrual symptoms. That is the more useful finding for most people."
+    },
+    {
+      "id": "sleep-and-hormones",
+      "title": "Why sleep breaks down before your period",
+      "category": "Wellbeing",
+      "blurb": "Progesterone withdrawal and a body temperature that will not drop.",
+      "minutes": 3,
+      "free": false,
+      "tags": ["sleep", "insomnia", "luteal", "temperature"],
+      "source": "Checked against published sleep research and NHS insomnia guidance.",
+      "body": "Core body temperature rises after ovulation and stays up through the luteal phase. Falling asleep depends on core temperature dropping, so a raised baseline makes sleep onset harder and sleep lighter in the week before a period. Progesterone withdrawal in the late luteal phase adds to it, and for people with premenstrual mood symptoms the disruption is worse still.\n\nWhat helps is mostly thermal and behavioural: a cooler bedroom, a warm shower an hour or two before bed so the subsequent temperature drop is steeper, consistent wake times, and limiting alcohol, which fragments the second half of the night.\n\nIf insomnia persists through the whole cycle rather than clustering premenstrually, it is worth treating as insomnia in its own right. Cognitive behavioural therapy for insomnia outperforms sleeping tablets over the long run."
+    },
+    {
+      "id": "mood-and-cycle",
+      "title": "Cycle-linked mood changes are real",
+      "category": "Wellbeing",
+      "blurb": "And logging them is how you prove the pattern.",
+      "minutes": 4,
+      "free": false,
+      "tags": ["mood", "anxiety", "PMDD", "tracking"],
+      "source": "Checked against ACOG and NHS guidance on premenstrual disorders.",
+      "body": "Oestrogen and progesterone both act on serotonin and GABA systems, so mood shifting with the cycle has a mechanism behind it. For some people it is mild; for others the late luteal phase brings irritability, anxiety, hopelessness or anger that is out of proportion to circumstances and lifts within days of bleeding starting.\n\nExisting conditions can also worsen premenstrually rather than being caused by the cycle — depression, anxiety, ADHD symptoms, migraine and epilepsy all show this pattern in some people. The distinction matters because it changes treatment.\n\nWhat makes this actionable is prospective logging. Recalling last month's mood is unreliable; two or three cycles of daily entries show whether symptoms cluster in the luteal phase or run throughout. That chart is what turns a vague complaint into a diagnosable pattern in a ten-minute appointment."
+    },
+    {
+      "id": "sex-drive",
+      "title": "Libido across the cycle and across life",
+      "category": "Wellbeing",
+      "blurb": "Hormones are one input among several.",
+      "minutes": 3,
+      "free": false,
+      "tags": ["libido", "sex drive", "testosterone"],
+      "source": "Checked against ACOG and NHS guidance on sexual health.",
+      "body": "Desire often rises around ovulation, when oestrogen and testosterone peak, and dips in the late luteal phase. That is an average, and the effect is small next to sleep, stress, relationship context, medication and pain.\n\nCommon and reversible causes of a drop: hormonal contraception in some people, SSRIs, poor sleep, postpartum recovery and breastfeeding, and perimenopausal vaginal dryness making sex uncomfortable — where the issue is pain avoidance rather than desire, and local oestrogen or lubricant addresses it directly.\n\nResponsive desire, where arousal precedes wanting rather than following it, is a normal pattern and not a deficit. Persistent distressing loss of desire is worth raising; there are approaches, and they start with identifying which of these inputs is actually in play."
+    },
+    {
+      "id": "vulva-health",
+      "title": "Vulval and vaginal health basics",
+      "category": "Wellbeing",
+      "blurb": "Less intervention is usually better.",
+      "minutes": 3,
+      "free": false,
+      "tags": ["vaginal health", "thrush", "BV", "hygiene"],
+      "source": "Checked against NHS guidance on vaginal health and vulval care.",
+      "body": "The vagina is self-cleaning and maintains an acidic pH via lactobacilli. Douching, internal washes and scented products disrupt that balance and increase the risk of bacterial vaginosis rather than preventing it. Plain water on the vulva is enough; nothing needs to go inside.\n\nThrush presents as thick white discharge with itching and soreness. Bacterial vaginosis presents as thin grey discharge with a fishy odour, often stronger after sex. They are treated differently, and self-treating one when you have the other is a common reason symptoms persist — a test is worth it if you are not certain.\n\nRecurrent symptoms, ulcers, persistent itching without discharge, or skin changes in colour or texture should be examined rather than treated repeatedly over the counter. Vulval skin conditions are common, treatable and frequently missed."
+    },
+    {
+      "id": "sti-basics",
+      "title": "STIs: testing, symptoms and silence",
+      "category": "Wellbeing",
+      "blurb": "The common ones usually have no symptoms at all.",
+      "minutes": 4,
+      "free": false,
+      "tags": ["STI", "chlamydia", "testing", "screening"],
+      "source": "Checked against NHS and CDC sexual health screening guidance.",
+      "body": "Chlamydia and gonorrhoea are frequently asymptomatic, particularly in the reproductive tract, which is why screening is based on risk and activity rather than on symptoms. Untreated chlamydia can ascend and cause pelvic inflammatory disease, which is a leading preventable cause of tubal infertility and chronic pelvic pain.\n\nWorth testing for: new partner, multiple partners, a partner who tested positive, any unexplained discharge, pelvic pain, bleeding between periods or after sex, or pain when urinating. Testing is usually a self-taken swab or a urine sample.\n\nHPV is extremely common and usually clears on its own; persistent high-risk types are what cervical screening looks for, and vaccination substantially reduces that risk. Screening intervals depend on age and local programme, and attending on schedule matters more than any symptom check."
+    },
+    {
+      "id": "miscarriage",
+      "title": "Early pregnancy loss",
+      "category": "Pregnancy",
+      "blurb": "Common, rarely anyone's fault, and often poorly explained.",
+      "minutes": 4,
+      "free": false,
+      "tags": ["miscarriage", "pregnancy loss", "recurrent"],
+      "source": "Checked against NHS, ACOG and RCOG guidance on early pregnancy loss.",
+      "body": "Around one in five recognised pregnancies ends in miscarriage, the large majority in the first trimester, and the most common cause is a chromosomal error at conception that no action could have changed. Exercise, stress, sex, working, lifting and an argument do not cause miscarriage, though almost everyone searches for a reason in them.\n\nSymptoms range from bleeding and cramping to no symptoms at all, with loss found at a scan. Management can be expectant, medical or surgical, and where there is no urgency the choice is genuinely yours.\n\nRecurrent loss — usually defined as two or three consecutive — warrants investigation for thyroid disease, antiphospholipid syndrome, uterine anatomy and other causes. Even after three losses, the chance of a subsequent successful pregnancy remains substantial, which is not a platitude but a statistic."
+    },
+    {
+      "id": "postpartum-cycle",
+      "title": "When periods return after birth",
+      "category": "Pregnancy",
+      "blurb": "Breastfeeding delays it, but not reliably enough to plan around.",
+      "minutes": 3,
+      "free": false,
+      "tags": ["postpartum", "breastfeeding", "lochia", "contraception"],
+      "source": "Checked against NHS and ACOG postpartum care guidance.",
+      "body": "Postpartum bleeding, lochia, lasts a few weeks and is not a period. If you are not breastfeeding, periods typically return somewhere between six and twelve weeks. Exclusive breastfeeding delays ovulation through prolactin, sometimes for many months, but the delay is not a contraceptive you can rely on — ovulation returns before the first period, so the first fertile cycle is invisible.\n\nEarly postpartum cycles are often irregular, and heavier or lighter than before. That usually settles within a few cycles.\n\nWorth contacting a clinician: bleeding that soaks a pad an hour, large clots, foul-smelling discharge, fever, or bleeding that restarts heavily after settling. And separately from bleeding, persistent low mood, anxiety or intrusive thoughts beyond the first two weeks should be raised — postpartum depression and anxiety are common and treatable."
+    },
+    {
+      "id": "tracking-well",
+      "title": "How to track so the data is actually useful",
+      "category": "Cycle basics",
+      "blurb": "Consistency beats completeness.",
+      "minutes": 3,
+      "free": true,
+      "tags": ["tracking", "logging", "patterns"],
+      "source": "Original guidance based on how the pattern engine in this app weights data.",
+      "body": "A pattern engine can only find what you gave it. Three habits make the difference.\n\nLog the same handful of things every day rather than everything occasionally. Two or three symptoms recorded daily produce a usable baseline; twenty symptoms logged only on bad days produce a chart that says every day is a bad day, because good days were never entered.\n\nLog period start dates carefully, since every prediction is anchored to them. A start logged two days late shifts the whole forward projection.\n\nLog on the day, not from memory at the weekend. Recall is systematically biased toward the memorable, which is exactly the bias that prospective tracking exists to remove.\n\nAfter two complete cycles the patterns view has enough to say something. Before that, it should say nothing, and it will."
+    },
+    {
+      "id": "doctor-visit",
+      "title": "Getting more out of a ten-minute appointment",
+      "category": "Cycle basics",
+      "blurb": "Bring dates and effects, not adjectives.",
+      "minutes": 3,
+      "free": true,
+      "tags": ["appointment", "advocacy", "report"],
+      "source": "Original guidance, informed by published work on patient-reported symptom diaries.",
+      "body": "Appointments are short and symptoms are hard to describe from memory, which is a bad combination for conditions diagnosed largely on history — endometriosis, PMDD and PCOS among them.\n\nThree things make a short appointment work. Dates: when symptoms started, how they map onto your cycle, how that has changed over months. Effects: what you cannot do now that you could before, in concrete terms — days of work missed, plans cancelled, painkillers taken. Effects are what change clinical decisions; adjectives are not.\n\nAnd a single specific question you want answered, stated at the start rather than at the door.\n\nA printed symptom and cycle history covering several months does most of this work in one page, which is the point of the six-month report in this app."
+    },
+    {
+      "id": "privacy-health-data",
+      "title": "Your cycle data is sensitive data",
+      "category": "Cycle basics",
+      "blurb": "What to ask of any app that holds it, including this one.",
+      "minutes": 3,
+      "free": true,
+      "tags": ["privacy", "data", "anonymous mode"],
+      "source": "Original guidance based on this app's own data handling.",
+      "body": "Cycle and symptom logs can reveal pregnancy, pregnancy loss, sexual activity and diagnosed conditions. That makes them worth being deliberate about, whichever app holds them.\n\nFour questions worth asking. Where is the data stored, and does it leave the device at all? Who else receives it — advertisers, analytics providers, data brokers? Can you use the app without giving a name or email? And can you export everything and then actually delete it, rather than deactivating an account that keeps the rows?\n\nFor this app the answers are: a local SQLite file on your own machine; nobody, because there is no analytics and no third-party call; yes, Anonymous Mode creates an account with no identifying field at all; and yes, export returns full JSON and delete removes every row by cascade rather than setting a flag."
+    }
+  ],
+  "courses": [
+    {
+      "id": "course-cycle-literacy",
+      "title": "Cycle literacy in five lessons",
+      "category": "Cycle basics",
+      "blurb": "The hormones, the phases and what your own numbers mean.",
+      "minutes": 22,
+      "expert": "Reviewed against NICHD and ACOG patient guidance",
+      "lessons": [
+        {"slug": "hormones", "title": "The four hormones that run the cycle", "minutes": 5,
+         "body": "FSH recruits a follicle. Oestrogen, produced by that follicle, rebuilds the uterine lining and thins cervical mucus. A surge of LH triggers release of the egg. Progesterone from the corpus luteum then stabilises the lining and raises basal temperature. Every symptom you track is downstream of one of those four, which is why symptoms cluster by phase rather than scattering at random."},
+        {"slug": "phases", "title": "Reading your own phase boundaries", "minutes": 4,
+         "body": "The luteal phase is relatively fixed for a given person, usually ten to sixteen days. The follicular phase absorbs the variation. So a 34-day cycle is almost always a late ovulation, not a long luteal phase — which is why this app counts ovulation backward from the predicted period rather than forward from the last one."},
+        {"slug": "variation", "title": "Normal variation versus a signal", "minutes": 4,
+         "body": "A few days of variation between cycles is expected. A persistent change of seven days or more, cycles under 21 or over 35 days, bleeding between periods, or three months without a period are the thresholds that justify a conversation with a clinician rather than another month of watching."},
+        {"slug": "symptoms", "title": "Which symptoms belong to which phase", "minutes": 5,
+         "body": "Cramps and heavy fatigue cluster menstrually. Rising energy and clear stretchy mucus mark the late follicular and ovulatory window, sometimes with one-sided ovulation pain. Bloating, tender breasts, cravings, irritability and disrupted sleep cluster in the luteal phase. Your own pattern may differ, and the patterns view exists to find yours rather than assume this one."},
+        {"slug": "tracking", "title": "Building a log worth analysing", "minutes": 4,
+         "body": "Log a small consistent set daily rather than everything occasionally. Anchor period start dates accurately. Two complete cycles is the minimum before patterns mean anything, and six makes predictions meaningfully tighter."}
+      ]
+    },
+    {
+      "id": "course-ttc",
+      "title": "Trying to conceive, without the folklore",
+      "category": "Fertility",
+      "blurb": "Timing, signals, expectations and when to seek help.",
+      "minutes": 20,
+      "expert": "Reviewed against NICHD and ACOG conception guidance",
+      "lessons": [
+        {"slug": "window", "title": "The six-day window", "minutes": 4,
+         "body": "Sperm survive up to five days in fertile mucus; an egg survives under a day. Conception is possible across roughly six days ending on the day of ovulation, with the highest probability in the two days before it."},
+        {"slug": "signals", "title": "Three signals and what each is good for", "minutes": 5,
+         "body": "LH tests predict, 24 to 36 hours ahead. Cervical mucus predicts, becoming clear and stretchy as oestrogen peaks. Basal temperature confirms, only after the fact. Use the first two for timing and the third for learning your own luteal length."},
+        {"slug": "frequency", "title": "Frequency beats precision", "minutes": 3,
+         "body": "Sex every one to two days through the fertile window gives close to the maximum chance without requiring you to identify the correct day. Saving up does not improve sperm quality in any meaningful way, and abstinence beyond a few days slightly reduces motility."},
+        {"slug": "expectations", "title": "What the monthly odds actually are", "minutes": 4,
+         "body": "For a healthy couple in their late twenties, roughly a one in four or five chance per cycle. Around 80% conceive within a year. Several unsuccessful months is the common experience, not a warning sign."},
+        {"slug": "help", "title": "When to ask for assessment", "minutes": 4,
+         "body": "Twelve months of trying under 35, six months at 35 or over, and immediately if periods are absent or very irregular, or there is known endometriosis, PCOS, previous pelvic infection or surgery, or repeated miscarriage. Assessment starts with confirming ovulation, checking tubes and a semen analysis."}
+      ]
+    },
+    {
+      "id": "course-pregnancy",
+      "title": "A trimester-by-trimester guide",
+      "category": "Pregnancy",
+      "blurb": "What develops, what you feel, and what needs a same-day call.",
+      "minutes": 24,
+      "expert": "Reviewed against NHS, ACOG and RCOG antenatal guidance",
+      "lessons": [
+        {"slug": "dating", "title": "Dating, and why week one predates conception", "minutes": 4,
+         "body": "Pregnancy is dated from the first day of the last period, so the first two weeks precede conception. A long cycle shifts that estimate, which is why a first-trimester scan is used to redate when the two disagree by more than about a week."},
+        {"slug": "first", "title": "First trimester", "minutes": 5,
+         "body": "Organ systems form by week 8. Nausea usually peaks between weeks 6 and 12. Folic acid, early antenatal booking, and a medication review are the practical priorities. Nausea preventing fluid intake needs treatment, not endurance."},
+        {"slug": "second", "title": "Second trimester", "minutes": 5,
+         "body": "Symptoms typically ease and movement is first felt between weeks 16 and 24. The anatomy scan falls around weeks 18 to 22 and glucose screening around 24 to 28."},
+        {"slug": "third", "title": "Third trimester", "minutes": 5,
+         "body": "Track your baby's own movement pattern rather than a kick count target, and report any reduction the same day. Labour contractions lengthen, strengthen and keep coming; Braxton Hicks do not."},
+        {"slug": "warnings", "title": "The list worth memorising", "minutes": 5,
+         "body": "Same-day contact for: any bleeding, severe headache, visual changes, sudden facial or hand swelling, upper abdominal pain, reduced movements, waters breaking, or fluid that is green or bloody."}
+      ]
+    },
+    {
+      "id": "course-pcos-endo",
+      "title": "PCOS and endometriosis: getting to a diagnosis",
+      "category": "Conditions",
+      "blurb": "What each is, how they are assessed, and how to be heard.",
+      "minutes": 20,
+      "expert": "Reviewed against ACOG, ESHRE and international PCOS guideline summaries",
+      "lessons": [
+        {"slug": "pcos-criteria", "title": "How PCOS is diagnosed", "minutes": 5,
+         "body": "Two of three: irregular or absent ovulation, clinical or biochemical androgen excess, and polycystic-appearing ovaries on scan — with thyroid disease and raised prolactin excluded first. A scan alone does not diagnose it."},
+        {"slug": "pcos-manage", "title": "Managing PCOS by symptom", "minutes": 5,
+         "body": "Cycle regulation and endometrial protection with combined contraception or cyclical progestogen; androgen symptoms with combined contraception and sometimes an anti-androgen; insulin resistance with metformin and movement; conception with letrozole as first-line ovulation induction."},
+        {"slug": "endo-pattern", "title": "The endometriosis symptom pattern", "minutes": 5,
+         "body": "Pain that limits daily life, starts before bleeding, and involves sex, bowels or bladder around the period. Disease extent correlates poorly with pain severity, and imaging is often normal, so history carries the weight."},
+        {"slug": "advocacy", "title": "Making the appointment count", "minutes": 5,
+         "body": "Bring dated symptom history and functional effects — days missed, activities dropped, analgesia taken. Ask directly about referral to gynaecology. If pain is dismissed without examination or a plan, asking for a second opinion is reasonable and normal."}
+      ]
+    },
+    {
+      "id": "course-perimenopause",
+      "title": "Perimenopause, start to finish",
+      "category": "Menopause",
+      "blurb": "The timeline, the symptoms and the treatment decisions.",
+      "minutes": 18,
+      "expert": "Reviewed against NHS, NAMS and ACOG menopause guidance",
+      "lessons": [
+        {"slug": "timeline", "title": "Where you are in the transition", "minutes": 4,
+         "body": "Early transition is marked by a persistent cycle-length change of seven days or more; late transition by gaps of 60 days or longer. Menopause is diagnosed retrospectively after twelve consecutive months without a period."},
+        {"slug": "symptoms", "title": "Fluctuation, not decline", "minutes": 4,
+         "body": "Oestrogen swings rather than falling smoothly, which is why symptoms come and go: hot flashes, night sweats, broken sleep, mood and anxiety changes, brain fog, joint aches and vaginal dryness. Periods often get heavier before they get lighter."},
+        {"slug": "treatment", "title": "Weighing hormone therapy", "minutes": 5,
+         "body": "The most effective treatment for vasomotor symptoms, with bone benefit. For most healthy people starting within ten years of menopause and under 60, benefits generally outweigh risks. Transdermal delivery avoids the small oral clot risk; a progestogen is required alongside oestrogen if you have a uterus."},
+        {"slug": "beyond", "title": "The parts nobody mentions", "minutes": 5,
+         "body": "Local vaginal oestrogen treats dryness and urinary symptoms with minimal absorption. Contraception is still needed until the twelve-month mark. Bone loading and cardiovascular risk deserve attention in this decade, independent of symptoms."}
+      ]
+    }
+  ]
+}

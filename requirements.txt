@@ -1,0 +1,8 @@
+fastapi>=0.115
+uvicorn>=0.30
+pydantic>=2.7
+python-multipart>=0.0.9
+itsdangerous>=2.2
+reportlab>=4.2
+httpx
+pytest

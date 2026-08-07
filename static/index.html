@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#B4436C">
+<title>cycliq</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/static/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div id="boot" class="boot"><div class="spinner"></div></div>
+
+<!-- ───────────────────────── auth / onboarding ───────────────────────── -->
+<section id="gate" class="screen gate hidden">
+  <div class="gate-inner">
+    <h1 class="wordmark">cycliq</h1>
+    <p class="tagline">Cycle, fertility and pregnancy tracking. Your data stays on your machine.</p>
+
+    <div id="gate-choose" class="stack">
+      <button class="btn primary" data-gate="signup">Create an account</button>
+      <button class="btn" data-gate="anon">Use Anonymous Mode</button>
+      <button class="btn ghost" data-gate="login">I already have an account</button>
+      <p class="fine">Anonymous Mode asks for no email and no name. You get a recovery code instead.</p>
+    </div>
+
+    <form id="form-signup" class="stack hidden">
+      <input type="email" name="email" placeholder="Email" autocomplete="email" required>
+      <input type="password" name="password" placeholder="Password (8+ characters)" autocomplete="new-password" required>
+      <button class="btn primary" type="submit">Create account</button>
+      <button class="btn ghost" type="button" data-gate="choose">Back</button>
+    </form>
+
+    <form id="form-login" class="stack hidden">
+      <input type="email" name="email" placeholder="Email" autocomplete="email" required>
+      <input type="password" name="password" placeholder="Password" autocomplete="current-password" required>
+      <button class="btn primary" type="submit">Log in</button>
+      <button class="btn ghost" type="button" data-gate="recovery">Anonymous account? Use a recovery code</button>
+      <button class="btn ghost" type="button" data-gate="choose">Back</button>
+    </form>
+
+    <form id="form-recovery" class="stack hidden">
+      <input name="handle" placeholder="Your handle (e.g. quiet-fern-402)" required>
+      <input name="code" placeholder="Recovery code" required>
+      <button class="btn primary" type="submit">Log in</button>
+      <button class="btn ghost" type="button" data-gate="choose">Back</button>
+    </form>
+
+    <p id="gate-error" class="error hidden"></p>
+  </div>
+</section>
+
+<!-- ───────────────────────────── onboarding ───────────────────────────── -->
+<section id="onboarding" class="screen hidden">
+  <div class="onb-wrap">
+    <div class="onb-progress"><div id="onb-bar"></div></div>
+
+    <div class="onb-step" data-step="0">
+      <h2>What brings you here?</h2>
+      <div class="choices" id="onb-goal">
+        <button class="choice" data-value="track">Track my cycle</button>
+        <button class="choice" data-value="ttc">Get pregnant</button>
+        <button class="choice" data-value="avoid">Avoid pregnancy</button>
+        <button class="choice" data-value="pregnant">I'm pregnant</button>
+      </div>
+    </div>
+
+    <div class="onb-step hidden" data-step="1">
+      <h2>How old are you?</h2>
+      <p class="muted">Used for the perimenopause screener and nothing else.</p>
+      <div class="choices" id="onb-age">
+        <button class="choice" data-value="2008">Under 20</button>
+        <button class="choice" data-value="2001">20–29</button>
+        <button class="choice" data-value="1991">30–39</button>
+        <button class="choice" data-value="1983">40–47</button>
+        <button class="choice" data-value="1973">48+</button>
+      </div>
+    </div>
+
+    <div class="onb-step hidden" data-step="2">
+      <h2>When did your last period start?</h2>
+      <p class="muted">Every prediction is anchored to this date, so it is worth getting right.</p>
+      <input type="date" id="onb-lmp">
+      <button class="btn primary" id="onb-lmp-next">Continue</button>
+      <button class="btn ghost" id="onb-lmp-skip">I don't remember</button>
+    </div>
+
+    <div class="onb-step hidden" data-step="3">
+      <h2>How long is your cycle, usually?</h2>
+      <p class="muted">First day of bleeding to the day before the next one starts.</p>
+      <div class="range-row">
+        <input type="range" id="onb-cycle" min="18" max="60" value="28">
+        <output id="onb-cycle-out">28 days</output>
+      </div>
+      <h3>And how many days do you bleed?</h3>
+      <div class="range-row">
+        <input type="range" id="onb-period" min="1" max="12" value="5">
+        <output id="onb-period-out">5 days</output>
+      </div>
+      <button class="btn primary" id="onb-finish">See my predictions</button>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────── app ─────────────────────────────── -->
+<main id="app" class="hidden">
+
+  <!-- TODAY -->
+  <section class="view" id="view-today">
+    <header class="topbar"><h1>Today</h1><span id="today-date" class="muted"></span></header>
+    <div id="ring-host" class="ring-host"></div>
+    <div id="today-actions" class="row-actions">
+      <button class="btn primary" id="btn-log-period">Log period</button>
+      <button class="btn" id="btn-log-today">Log today</button>
+    </div>
+    <div id="due-reminders"></div>
+    <div id="mode-panel"></div>
+    <div id="today-cards" class="cards"></div>
+  </section>
+
+  <!-- CALENDAR -->
+  <section class="view hidden" id="view-calendar">
+    <header class="topbar">
+      <button class="icon-btn" id="cal-prev">‹</button>
+      <h1 id="cal-title">Calendar</h1>
+      <button class="icon-btn" id="cal-next">›</button>
+    </header>
+    <div class="legend">
+      <span><i class="dot period"></i>Period</span>
+      <span><i class="dot predicted"></i>Predicted</span>
+      <span><i class="dot fertile"></i>Fertile</span>
+      <span><i class="dot ovulation"></i>Ovulation</span>
+    </div>
+    <div class="weekdays"><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span><span>S</span></div>
+    <div id="cal-grid" class="cal-grid"></div>
+    <div id="cal-detail" class="card"></div>
+  </section>
+
+  <!-- INSIGHTS -->
+  <section class="view hidden" id="view-insights">
+    <header class="topbar"><h1>Insights</h1></header>
+    <nav class="segmented" id="insights-tabs">
+      <button class="seg active" data-seg="library">Library</button>
+      <button class="seg" data-seg="courses">Courses</button>
+      <button class="seg" data-seg="patterns">Patterns</button>
+      <button class="seg" data-seg="checker">Checker</button>
+    </nav>
+    <div id="insights-body"></div>
+  </section>
+
+  <!-- CHAT -->
+  <section class="view hidden" id="view-chat">
+    <header class="topbar"><h1>Chat</h1></header>
+    <nav class="segmented" id="chat-tabs">
+      <button class="seg active" data-seg="secret">Secret Chats</button>
+      <button class="seg" data-seg="assistant">Health Assistant</button>
+    </nav>
+    <div id="chat-body"></div>
+  </section>
+
+  <!-- PROFILE -->
+  <section class="view hidden" id="view-profile">
+    <header class="topbar"><h1>You</h1></header>
+    <div id="profile-body"></div>
+  </section>
+
+  <nav class="tabbar">
+    <button class="tab active" data-view="today"><span>◐</span>Today</button>
+    <button class="tab" data-view="calendar"><span>▦</span>Calendar</button>
+    <button class="tab" data-view="insights"><span>✦</span>Insights</button>
+    <button class="tab" data-view="chat"><span>◇</span>Chat</button>
+    <button class="tab" data-view="profile"><span>○</span>You</button>
+  </nav>
+</main>
+
+<!-- sheet -->
+<div id="sheet" class="sheet hidden">
+  <div class="sheet-backdrop"></div>
+  <div class="sheet-panel">
+    <div class="sheet-grab"></div>
+    <div id="sheet-content"></div>
+  </div>
+</div>
+
+<div id="toast" class="toast hidden"></div>
+
+<script src="/static/app.js"></script>
+<script src="/static/insights.js"></script>
+<script src="/static/social.js"></script>
+<script src="/static/import.js"></script>
+</body>
+</html>

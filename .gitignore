@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+# Local per-user data — never ship someone's cycle/health data in the repo.
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+.DS_Store
