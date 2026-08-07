@@ -64,11 +64,14 @@ function closeSheet() { $('#sheet').classList.add('hidden'); }
 
 /* ── premium gate helper, used by every screen ────────────────── */
 
+const ICON_LOCK = '<svg class="icon" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2.5"/><path d="M8 11V7.5a4 4 0 0 1 8 0V11"/></svg>';
+
 function lockedCard(detail, previewHtml) {
   const feature = (detail && detail.feature) || 'This';
   return `<div class="card locked">
     <div class="blurred">${previewHtml}</div>
     <div class="lock-overlay">
+      ${ICON_LOCK}
       <span class="badge">Premium</span>
       <p class="muted">${esc(feature)} is part of Premium.</p>
       <button class="btn primary" onclick="showPaywall()">Start ${detail?.trial_days || 7}-day free trial</button>
@@ -213,7 +216,7 @@ function ringSvg(p) {
     if (b <= a) return '';
     return `<circle r="${R}" cx="150" cy="150" fill="none" stroke="${color}" stroke-width="${width}"
       stroke-dasharray="${((b - a) * C).toFixed(1)} ${C}" stroke-dashoffset="${(-a * C).toFixed(1)}"
-      transform="rotate(-90 150 150)" stroke-linecap="butt"/>`;
+      transform="rotate(-90 150 150)" stroke-linecap="round"/>`;
   };
   const ovDay = Math.max(1, (p.cycle_len || 28) - (p.luteal_len || 14));
   const progress = day ? (day / len) * C : 0;
@@ -227,12 +230,18 @@ function ringSvg(p) {
     : 'to start predictions';
 
   return `<svg class="ring" viewBox="0 0 300 300" role="img" aria-label="Cycle ring">
+    <defs>
+      <linearGradient id="ringPlumGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="var(--plum-light)"/>
+        <stop offset="100%" stop-color="var(--plum-dark)"/>
+      </linearGradient>
+    </defs>
     <circle r="${R}" cx="150" cy="150" fill="none" stroke="var(--line)" stroke-width="16"/>
-    ${seg(0, p.period_len || 5, 'var(--plum)', 16)}
+    ${seg(0, p.period_len || 5, 'url(#ringPlumGrad)', 16)}
     ${seg(ovDay - 5, ovDay + 2, 'var(--fertile)', 16)}
     ${seg(ovDay - 0.5, ovDay + 0.5, 'var(--ovul)', 16)}
     <circle r="${R}" cx="150" cy="150" fill="none" stroke="var(--ink)" stroke-width="2.5"
-      stroke-dasharray="${progress.toFixed(1)} ${C}" transform="rotate(-90 150 150)" opacity=".45"/>
+      stroke-dasharray="${progress.toFixed(1)} ${C}" transform="rotate(-90 150 150)" stroke-linecap="round" opacity=".45"/>
     <text x="150" y="128" text-anchor="middle" class="ring-day">${day ? `Day ${day}` : 'No data'}</text>
     <text x="150" y="163" text-anchor="middle" class="ring-big">${esc(headline)}</text>
     <text x="150" y="186" text-anchor="middle" class="ring-sub">${esc(p.phase ? p.phase + ' phase' : '')}</text>

@@ -16,7 +16,12 @@
 <!-- ───────────────────────── auth / onboarding ───────────────────────── -->
 <section id="gate" class="screen gate hidden">
   <div class="gate-inner">
-    <h1 class="wordmark">cycliq</h1>
+    <div class="wordmark-row">
+      <div class="wordmark-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 3a9 9 0 1 1-6.36 15.36" stroke-linecap="round"/><circle cx="12" cy="3" r="1.6" fill="#fff" stroke="none"/></svg>
+      </div>
+      <h1 class="wordmark">cycliq</h1>
+    </div>
     <p class="tagline">Cycle, fertility and pregnancy tracking. Your data stays on your machine.</p>
 
     <div id="gate-choose" class="stack">
@@ -60,10 +65,18 @@
     <div class="onb-step" data-step="0">
       <h2>What brings you here?</h2>
       <div class="choices" id="onb-goal">
-        <button class="choice" data-value="track">Track my cycle</button>
-        <button class="choice" data-value="ttc">Get pregnant</button>
-        <button class="choice" data-value="avoid">Avoid pregnancy</button>
-        <button class="choice" data-value="pregnant">I'm pregnant</button>
+        <button class="choice" data-value="track">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 1-6.36 15.36"/><circle cx="12" cy="3" r="1.4" fill="currentColor" stroke="none"/></svg>
+          Track my cycle</button>
+        <button class="choice" data-value="ttc">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-9.3-9.4C1.6 7.4 3.6 4.5 6.7 4.5c2 0 3.4 1.1 4.3 2.4.7-1 2-1.9 3.4-2.2M18 5v5M15.5 7.5h5"/></svg>
+          Get pregnant</button>
+        <button class="choice" data-value="avoid">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M12 3l7 3v5.2c0 4.4-2.9 7.9-7 9.3-4.1-1.4-7-4.9-7-9.3V6l7-3z"/><path d="M9 12l2.2 2.2L15.5 10"/></svg>
+          Avoid pregnancy</button>
+        <button class="choice" data-value="pregnant">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M12 20.5S3.8 15.3 3.8 9.2C3.8 6 6.3 3.8 9 3.8c1.4 0 2.6.7 3 1.7.4-1 1.6-1.7 3-1.7 2.7 0 5.2 2.2 5.2 5.4 0 6.1-8.2 11.3-8.2 11.3z"/></svg>
+          I'm pregnant</button>
       </div>
     </div>
 
@@ -123,9 +136,13 @@
   <!-- CALENDAR -->
   <section class="view hidden" id="view-calendar">
     <header class="topbar">
-      <button class="icon-btn" id="cal-prev">‹</button>
+      <button class="icon-btn" id="cal-prev" aria-label="Previous month">
+        <svg class="icon icon-sm" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg>
+      </button>
       <h1 id="cal-title">Calendar</h1>
-      <button class="icon-btn" id="cal-next">›</button>
+      <button class="icon-btn" id="cal-next" aria-label="Next month">
+        <svg class="icon icon-sm" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg>
+      </button>
     </header>
     <div class="legend">
       <span><i class="dot period"></i>Period</span>
@@ -167,11 +184,21 @@
   </section>
 
   <nav class="tabbar">
-    <button class="tab active" data-view="today"><span>◐</span>Today</button>
-    <button class="tab" data-view="calendar"><span>▦</span>Calendar</button>
-    <button class="tab" data-view="insights"><span>✦</span>Insights</button>
-    <button class="tab" data-view="chat"><span>◇</span>Chat</button>
-    <button class="tab" data-view="profile"><span>○</span>You</button>
+    <button class="tab active" data-view="today">
+      <svg class="icon" viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 1-6.36 15.36"/><circle cx="12" cy="3" r="1.4" fill="currentColor" stroke="none"/></svg>
+      Today</button>
+    <button class="tab" data-view="calendar">
+      <svg class="icon" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="3"/><path d="M3.5 9.5h17M8 3v3.4M16 3v3.4"/></svg>
+      Calendar</button>
+    <button class="tab" data-view="insights">
+      <svg class="icon" viewBox="0 0 24 24"><path d="M12 3l1.9 5.6L19.5 10.5l-5.6 1.9L12 18l-1.9-5.6L4.5 10.5l5.6-1.9L12 3z"/></svg>
+      Insights</button>
+    <button class="tab" data-view="chat">
+      <svg class="icon" viewBox="0 0 24 24"><path d="M4 5.5h16v11H9.5L5 20.5V16.5H4v-11z"/></svg>
+      Chat</button>
+    <button class="tab" data-view="profile">
+      <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.6"/><path d="M4.5 20c1.2-4 4-6 7.5-6s6.3 2 7.5 6"/></svg>
+      You</button>
   </nav>
 </main>
 
