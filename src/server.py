@@ -376,8 +376,38 @@ def index() -> FileResponse:
 app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
 
 
+def _lan_ip() -> str | None:
+    """Best-effort local network address, for the startup banner only — never
+    used for anything that affects behavior. Opens no real connection."""
+    import socket
+
+    try:
+        with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as probe:
+            probe.connect(("8.8.8.8", 80))
+            return probe.getsockname()[0]
+    except OSError:
+        return None
+
+
 if __name__ == "__main__":
+    import os
+
     import uvicorn
 
     db.init_db()
-    uvicorn.run(app, host="127.0.0.1", port=8103, log_level="info")
+    # Default stays loopback-only so running this never silently exposes
+    # health data to the network. Set CYCLIQ_HOST=0.0.0.0 to reach it from a
+    # phone on the same WiFi — see README's "Use it on your phone" section.
+    host = os.getenv("CYCLIQ_HOST", "127.0.0.1")
+    port = int(os.getenv("CYCLIQ_PORT", "8103"))
+
+    print(f"\ncycliq running at http://127.0.0.1:{port}")
+    if host != "127.0.0.1":
+        lan_ip = _lan_ip()
+        if lan_ip:
+            print(f"On your phone (same WiFi): http://{lan_ip}:{port}")
+        else:
+            print("Could not detect a LAN address — check your WiFi connection.")
+    print()
+
+    uvicorn.run(app, host=host, port=port, log_level="info")

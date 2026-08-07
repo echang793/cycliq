@@ -17,10 +17,16 @@ vanilla-JS installable PWA. No build step for the frontend.
 
 ```bash
 .venv/bin/python src/server.py            # http://127.0.0.1:8103
+CYCLIQ_HOST=0.0.0.0 .venv/bin/python src/server.py   # + reachable on WiFi, for phone use
 .venv/bin/python -m pytest tests/ -q      # full suite
 ```
 
 Venv is Python 3.13. Ports 8100/8101/8102 belong to dinkiq/spikeiq/pongiq.
+`CYCLIQ_HOST`/`CYCLIQ_PORT` are read only in `server.py`'s `__main__` block —
+default stays `127.0.0.1` so nothing is reachable off-machine unless someone
+explicitly opts in. This app is mobile-first by design (see README's "Use it
+on your phone"); the LAN bind is the primary intended way to actually use it
+day to day, not an edge case.
 
 ## Free vs Premium
 
