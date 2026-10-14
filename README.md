@@ -41,13 +41,17 @@ to use it day to day.
    the network by accident.)
 
 2. On the phone — **same WiFi as this computer** — open that address in
-   Safari (iPhone) or Chrome (Android).
+   Safari (iPhone) or Chrome (Android). On iPhone, use Safari: other iPhone
+   browsers cannot add a web app to the Home Screen.
 3. Tap **Share → Add to Home Screen** (Safari) or the browser's install
    prompt (Chrome). It now opens full-screen with its own icon, like any
-   other app — no browser address bar, works offline for the app shell.
+   other app — no browser address bar.
 4. The computer needs to be on and the server running for the phone to reach
-   it — there's no cloud component. If the server stops, the phone shows a
-   simple offline screen until it's running again.
+   it — there's no cloud component. If the server stops, the app cannot load
+   or save anything until it's running again. The offline shell and push
+   notifications are **not** available this way: browsers only enable service
+   workers on `https://` or `localhost`, and a plain `http://` WiFi address is
+   neither, so reminders show inside the app only.
 
 Your computer's IP address can change when it reconnects to WiFi, so if the
 phone stops connecting after a while, just re-run step 1 and check the
