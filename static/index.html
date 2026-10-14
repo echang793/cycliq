@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#B4436C">
+<meta name="theme-color" content="#A63D6B">
 <title>cycliq</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/static/icon.svg" type="image/svg+xml">
@@ -18,13 +18,21 @@
   <div class="gate-inner">
     <div class="wordmark-row">
       <div class="wordmark-mark" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none"><path d="M12 3a9 9 0 1 1-6.36 15.36" stroke-linecap="round"/><circle cx="12" cy="3" r="1.6" fill="#fff" stroke="none"/></svg>
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 3a9 9 0 1 1-6.36 15.36" stroke-linecap="round"/><circle cx="12" cy="3" r="1.6" fill="currentColor" stroke="none" style="color: var(--on-plum)"/></svg>
       </div>
       <h1 class="wordmark">cycliq</h1>
     </div>
     <p class="tagline">Cycle, fertility and pregnancy tracking. Your data stays on your machine.</p>
 
     <div id="gate-choose" class="stack">
+      <div class="gate-art" aria-hidden="true">
+        <svg viewBox="0 0 200 200">
+          <circle cx="100" cy="100" r="80" fill="none" stroke="var(--line)" stroke-width="16"/>
+          <circle cx="100" cy="100" r="80" fill="none" stroke="var(--plum)" stroke-width="16" stroke-linecap="round" transform="rotate(-90 100 100)" stroke-dasharray="78 503" stroke-dashoffset="-4"/>
+          <circle cx="100" cy="100" r="80" fill="none" stroke="var(--fertile)" stroke-width="16" stroke-linecap="round" transform="rotate(-90 100 100)" stroke-dasharray="100 503" stroke-dashoffset="-182"/>
+          <circle cx="100" cy="100" r="80" fill="none" stroke="var(--ovul)" stroke-width="16" stroke-linecap="round" transform="rotate(-90 100 100)" stroke-dasharray="1 503" stroke-dashoffset="-234"/>
+        </svg>
+      </div>
       <button class="btn primary" data-gate="signup">Create an account</button>
       <button class="btn" data-gate="anon">Use Anonymous Mode</button>
       <button class="btn ghost" data-gate="login">I already have an account</button>
@@ -130,6 +138,7 @@
     </div>
     <div id="due-reminders"></div>
     <div id="mode-panel"></div>
+    <div id="daily-quiz"></div>
     <div id="today-cards" class="cards"></div>
   </section>
 
@@ -217,5 +226,6 @@
 <script src="/static/insights.js"></script>
 <script src="/static/social.js"></script>
 <script src="/static/import.js"></script>
+<script src="/static/quiz.js"></script>
 </body>
 </html>

@@ -225,27 +225,24 @@ function ringSvg(p) {
     ? 'Log a period'
     : p.days_to_period > 0 ? `${p.days_to_period} days`
       : p.days_to_period === 0 ? 'Today' : `${Math.abs(p.days_to_period)} days late`;
-  const sub = p.next_period
-    ? `until your period · window ${fmtDay(p.next_period_low)}–${fmtDay(p.next_period_high)}`
-    : 'to start predictions';
+  const lead = p.next_period ? 'until your period' : 'to start predictions';
+  const windowText = p.next_period
+    ? `window ${fmtDay(p.next_period_low)} – ${fmtDay(p.next_period_high)}`
+    : '';
+  const dayLine = day ? `Day ${day}${p.phase ? ` · ${p.phase} phase` : ''}` : 'No data yet';
+  const innerR = R - 20, innerC = 2 * Math.PI * innerR;
 
-  return `<svg class="ring" viewBox="0 0 300 300" role="img" aria-label="Cycle ring">
-    <defs>
-      <linearGradient id="ringPlumGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stop-color="var(--plum-light)"/>
-        <stop offset="100%" stop-color="var(--plum-dark)"/>
-      </linearGradient>
-    </defs>
+  return `<svg class="ring" viewBox="0 0 300 300" role="img" aria-label="Cycle ring: ${esc(dayLine)}, ${esc(headline)} ${esc(lead)}">
     <circle r="${R}" cx="150" cy="150" fill="none" stroke="var(--line)" stroke-width="16"/>
-    ${seg(0, p.period_len || 5, 'url(#ringPlumGrad)', 16)}
+    ${seg(0, p.period_len || 5, 'var(--plum)', 16)}
     ${seg(ovDay - 5, ovDay + 2, 'var(--fertile)', 16)}
     ${seg(ovDay - 0.5, ovDay + 0.5, 'var(--ovul)', 16)}
-    <circle r="${R}" cx="150" cy="150" fill="none" stroke="var(--ink)" stroke-width="2.5"
-      stroke-dasharray="${progress.toFixed(1)} ${C}" transform="rotate(-90 150 150)" stroke-linecap="round" opacity=".45"/>
-    <text x="150" y="128" text-anchor="middle" class="ring-day">${day ? `Day ${day}` : 'No data'}</text>
-    <text x="150" y="163" text-anchor="middle" class="ring-big">${esc(headline)}</text>
-    <text x="150" y="186" text-anchor="middle" class="ring-sub">${esc(p.phase ? p.phase + ' phase' : '')}</text>
-    <text x="150" y="204" text-anchor="middle" class="ring-sub">${esc(sub)}</text>
+    <circle r="${innerR}" cx="150" cy="150" fill="none" stroke="var(--ink)" stroke-width="2"
+      stroke-dasharray="${(progress / C * innerC).toFixed(1)} ${innerC.toFixed(1)}" transform="rotate(-90 150 150)" stroke-linecap="round" opacity=".35"/>
+    <text x="150" y="124" text-anchor="middle" class="ring-day">${esc(dayLine)}</text>
+    <text x="150" y="168" text-anchor="middle" class="ring-big">${esc(headline)}</text>
+    <text x="150" y="192" text-anchor="middle" class="ring-sub">${esc(lead)}</text>
+    <text x="150" y="212" text-anchor="middle" class="ring-sub">${esc(windowText)}</text>
   </svg>`;
 }
 
@@ -269,6 +266,7 @@ async function renderToday() {
   $('#today-date').textContent = new Date().toLocaleDateString(undefined, { weekday: 'long', month: 'long', day: 'numeric' });
   $('#ring-host').innerHTML = ringSvg(data.prediction);
   $('#today-cards').innerHTML = data.cards.map(cardHtml).join('');
+  await renderDailyQuiz();
 
   const due = await api('/api/reminders/due');
   $('#due-reminders').innerHTML = due.due.length

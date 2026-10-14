@@ -114,8 +114,10 @@ async function openLesson(courseId, index) {
   openSheet(`<h2>${esc(l.title)}</h2>
     <p class="muted">${esc(c.title)} · lesson ${index + 1} of ${c.lessons.length}</p>
     <div class="article-body" style="margin-top:16px"><p>${esc(l.body)}</p></div>
-    <button class="btn primary" style="width:100%" onclick="completeLesson('${courseId}','${l.slug}')">
-      Mark complete</button>
+    <button class="btn primary" style="width:100%" onclick="openLessonQuiz('${courseId}','${l.slug}')">
+      Take the quiz</button>
+    <button class="btn" style="width:100%;margin-top:8px" onclick="completeLesson('${courseId}','${l.slug}')">
+      Mark complete without the quiz</button>
     <button class="btn ghost" style="width:100%;margin-top:8px" onclick="openCourse('${courseId}')">Back to course</button>`);
 }
 

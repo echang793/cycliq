@@ -12,7 +12,7 @@
    2026-08-06 debugging a date-handling fix that two ordinary reloads did not
    pick up. Bump CACHE on any shell change so activate's cleanup still runs. */
 
-const CACHE = 'cycliq-shell-v3';
+const CACHE = 'cycliq-shell-v5';
 const SHELL = [
   '/',
   '/static/style.css',
@@ -20,7 +20,10 @@ const SHELL = [
   '/static/insights.js',
   '/static/social.js',
   '/static/import.js',
+  '/static/quiz.js',
   '/static/icon.svg',
+  '/static/fonts/bricolage-grotesque-latin.woff2',
+  '/static/fonts/hanken-grotesk-latin.woff2',
   '/manifest.json',
 ];
 

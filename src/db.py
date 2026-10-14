@@ -230,6 +230,18 @@ CREATE TABLE IF NOT EXISTS contractions (
     duration_s  REAL NOT NULL
 );
 CREATE INDEX IF NOT EXISTS idx_contractions_user ON contractions(user_id, started_at);
+
+-- One row per quiz a user has answered: 'daily:YYYY-MM-DD' (answered once, final)
+-- or 'lesson:<course>:<slug>' (best score kept).
+CREATE TABLE IF NOT EXISTS quiz_results (
+    user_id      INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+    quiz_key     TEXT NOT NULL,
+    score        INTEGER NOT NULL,
+    total        INTEGER NOT NULL,
+    answered_on  TEXT NOT NULL,
+    created_at   TEXT NOT NULL,
+    PRIMARY KEY (user_id, quiz_key)
+);
 """
 
 

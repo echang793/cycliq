@@ -32,6 +32,7 @@ import partner  # noqa: E402
 import patterns  # noqa: E402
 import predict as pr  # noqa: E402
 import pregnancy  # noqa: E402
+import quizzes  # noqa: E402
 import reminders  # noqa: E402
 import report  # noqa: E402
 import symptoms as sym  # noqa: E402
@@ -188,6 +189,7 @@ def export_me(user: sqlite3.Row = Depends(current_user)) -> dict:
         "partner_links": "SELECT * FROM partner_links WHERE owner_id = ? OR partner_id = ?",
         "pregnancies": "SELECT * FROM pregnancies WHERE user_id = ?",
         "content_progress": "SELECT * FROM content_progress WHERE user_id = ?",
+        "quiz_results": "SELECT * FROM quiz_results WHERE user_id = ?",
     }
     out: dict = {"account": auth.public_user(user), "billing": billing.status(uid)}
     for key, sql in tables.items():
@@ -333,7 +335,7 @@ def health() -> dict:
 
 
 for module in (insights, reminders, patterns, checker, assistant, content,
-               community, partner, pregnancy, ttc, report, importer):
+               community, partner, pregnancy, ttc, report, importer, quizzes):
     app.include_router(module.router)
 
 
@@ -348,8 +350,8 @@ def manifest() -> JSONResponse:
         "short_name": "cycliq",
         "start_url": "/",
         "display": "standalone",
-        "background_color": "#FFF7FA",
-        "theme_color": "#B4436C",
+        "background_color": "#F6F2F5",
+        "theme_color": "#A63D6B",
         "description": "Cycle, fertility and pregnancy tracking that keeps your data local.",
         "icons": [
             {"src": "/static/icon.svg", "sizes": "any", "type": "image/svg+xml",

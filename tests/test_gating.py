@@ -19,6 +19,7 @@ PREMIUM_GET = [
     "/api/report.pdf",
     "/api/pregnancy/weeks",
     "/api/pregnancy/contractions",
+    "/api/quiz/lessons/course-cycle-literacy/hormones",
 ]
 
 FREE_GET = [
@@ -36,6 +37,8 @@ FREE_GET = [
     "/api/ttc/window",
     "/api/ttc/chart",
     "/api/pregnancy/status",
+    "/api/quiz/daily",
+    "/api/quiz/stats",
 ]
 
 

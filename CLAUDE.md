@@ -155,6 +155,20 @@ name. Anonymous Mode creates an account with no identifying field at all.
   `fetch()` is subject to that same disk cache unless told not to trust it.
   Bump `CACHE` in `static/sw.js` on any shell-file change. Found debugging the
   date fix above: two ordinary reloads didn't pick it up.
+- **Fonts are bundled in `static/fonts/` (woff2, OFL), never loaded from Google
+  Fonts.** The "no third-party calls" promise in the README depends on it;
+  `tests/test_frontend_assets.py` fails if any frontend file references an
+  external host. The design (Bricolage Grotesque headings, Hanken Grotesk body,
+  flat plum/teal/amber palette) came from the Claude Design canvas on
+  2026-10-12; colors live as CSS variables in `style.css` and the manifest
+  colors are tested against them.
+- **Quizzes (`quizzes.py`, `data/quizzes.json`) only test facts the library
+  states.** If you change an article's claim, change the matching question too;
+  `test_quizzes` checks every lesson has a valid quiz but cannot check the
+  medicine. Answers are server-side only: the GET responses must never carry
+  `answer` or `explanation` before a question is answered. Daily answers are
+  write-once (a retry cannot rewrite the result); lesson quizzes keep the best
+  score, and passing (70%) marks the lesson complete.
 - `content._idf` weights search matches by rarity — a flat per-tier score lets
   "period" (in most titles, this being a menstrual-cycle library) always beat
   a specific symptom that only appears in one article's body. If you add

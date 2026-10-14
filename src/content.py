@@ -225,7 +225,7 @@ def read_course(course_id: str, user: sqlite3.Row = Depends(current_user)) -> di
     if course is None:
         raise HTTPException(404, detail={"error": "not_found"})
     if not billing.is_premium(user["id"]):
-        raise HTTPException(402, detail=billing.upsell("Video courses and expert content"))
+        raise HTTPException(402, detail=billing.upsell("Courses and lesson quizzes"))
     done = {
         r["lesson_slug"]
         for r in db.query(

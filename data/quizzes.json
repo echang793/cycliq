@@ -1,0 +1,123 @@
+{
+  "_note": "Original questions for cycliq. Every answer is something stated in data/library.json, so a quiz never teaches a fact the library does not. `answer` is the index into `options`.",
+  "daily": [
+    {"id": "d-day-one", "q": "What counts as day 1 of your cycle?", "options": ["The day you ovulate", "The first day of bleeding", "The day after bleeding stops"], "answer": 1, "explain": "A cycle is counted from the first day of bleeding to the day before the next bleed starts."},
+    {"id": "d-day-14", "q": "In a well-known study, about what share of people with 28-day cycles actually ovulated on day 14?", "options": ["About 14%", "About half", "About 90%"], "answer": 0, "explain": "Only about 14% did. The most common ovulation day was day 16, and the range ran from day 11 to day 20. That is why cycliq predicts a window, not a day."},
+    {"id": "d-bbt", "q": "A sustained rise in basal body temperature tells you what?", "options": ["Ovulation is about to happen", "Ovulation has already happened", "You are pregnant"], "answer": 1, "explain": "Progesterone raises temperature after the egg is released, so BBT confirms ovulation after the fact. It does not predict it."},
+    {"id": "d-luteal", "q": "Which part of the cycle tends to stay the most consistent for one person?", "options": ["The luteal phase", "The follicular phase", "The length of the bleed"], "answer": 0, "explain": "The luteal phase usually holds at roughly ten to sixteen days. The follicular phase absorbs most of the variation."},
+    {"id": "d-normal", "q": "Which range of adult cycle lengths is generally considered typical?", "options": ["Exactly 28 days only", "About 21 to 35 days", "About 25 to 27 days"], "answer": 1, "explain": "Twenty-eight days is an average, not a target. What matters more is consistency for you."},
+    {"id": "d-ferritin", "q": "Which blood test shows low iron stores before anaemia appears?", "options": ["Ferritin", "Sodium", "Glucose"], "answer": 0, "explain": "A full blood count can look normal while ferritin, the storage measure, is already low. Heavy periods deplete iron faster than diet replaces it."},
+    {"id": "d-cramp-timing", "q": "When do anti-inflammatories such as ibuprofen work best for period cramps?", "options": ["Once pain is at its peak", "At the first twinge", "They do not help"], "answer": 1, "explain": "They reduce prostaglandin production, so they work considerably better taken early than at peak pain."},
+    {"id": "d-fertile-window", "q": "Roughly how long is the fertile window each cycle?", "options": ["About six days", "A single day", "About two weeks"], "answer": 0, "explain": "Sperm can survive up to about five days and an egg under a day, so conception is possible across roughly the five days before ovulation plus the day itself."},
+    {"id": "d-lh-pos", "q": "True or false: a positive ovulation test means an egg will always be released.", "options": ["True", "False"], "answer": 1, "explain": "A positive test shows an LH surge happened. People with PCOS can have chronically high LH, and some cycles surge without releasing an egg."},
+    {"id": "d-sleep", "q": "Why does sleep often get lighter in the week before a period?", "options": ["Core body temperature stays raised and progesterone is falling", "The moon", "Low iron only"], "answer": 0, "explain": "Falling asleep depends on core temperature dropping, and it stays raised through the luteal phase."},
+    {"id": "d-breastfeeding", "q": "Is exclusive breastfeeding a reliable form of contraception?", "options": ["Yes, always", "No, ovulation can return before the first period", "Only at night"], "answer": 1, "explain": "It delays ovulation but not reliably, and ovulation returns before the first period, so the first fertile cycle is invisible."},
+    {"id": "d-window", "q": "Why does cycliq show a predicted window instead of a single day?", "options": ["Calendar math cannot pin the exact day", "To save screen space", "Because cycles never vary"], "answer": 0, "explain": "Calendar predictions can give a reasonable window but not a day, so the window widens when your own cycles vary."},
+    {"id": "d-discharge", "q": "Thin grey discharge with a fishy smell usually suggests what?", "options": ["Ovulation", "Bacterial vaginosis", "Pregnancy"], "answer": 1, "explain": "That is not part of the normal cycle rhythm. It usually means bacterial vaginosis and needs treatment, not tracking."},
+    {"id": "d-test", "q": "When is a urine pregnancy test reasonably reliable?", "options": ["The day after sex", "From the day a period is due", "Three days after ovulation"], "answer": 1, "explain": "hCG only becomes detectable a few days after implantation. Testing earlier produces false negatives."}
+  ],
+  "lessons": {
+    "course-cycle-literacy": {
+      "hormones": [
+        {"q": "Which hormone surge triggers the release of the egg?", "options": ["FSH", "LH", "Progesterone"], "answer": 1, "explain": "A surge of luteinising hormone triggers ovulation."},
+        {"q": "Which hormone raises basal body temperature after ovulation?", "options": ["Oestrogen", "FSH", "Progesterone"], "answer": 2, "explain": "Progesterone from the corpus luteum stabilises the lining and raises basal temperature."}
+      ],
+      "phases": [
+        {"q": "Which phase absorbs most of the variation between cycles?", "options": ["Luteal", "Follicular", "Menstrual"], "answer": 1, "explain": "The luteal phase is relatively fixed for a person. The follicular phase is what varies."},
+        {"q": "A 34-day cycle is most often explained by:", "options": ["A long luteal phase", "A late ovulation", "Heavier bleeding"], "answer": 1, "explain": "A long cycle is usually a late ovulation, not a long second half."}
+      ],
+      "variation": [
+        {"q": "Which is a reason to talk to a clinician?", "options": ["A cycle three days longer than last month", "Periods stopping for three months when not pregnant", "One odd cycle after travel"], "answer": 1, "explain": "Three months without a period, cycles outside 21 to 35 days, or a persistent change of a week or more are the thresholds."},
+        {"q": "Adult cycles of about how many days are considered typical?", "options": ["21 to 35", "Exactly 28", "25 to 30"], "answer": 0, "explain": "The typical adult range is about 21 to 35 days."}
+      ],
+      "symptoms": [
+        {"q": "Bloating, tender breasts and disrupted sleep cluster mostly in which phase?", "options": ["Menstrual", "Luteal", "Follicular"], "answer": 1, "explain": "These are luteal-phase symptoms, driven by high progesterone."},
+        {"q": "Period cramps come from which chemicals making the uterus contract?", "options": ["Prostaglandins", "Antibodies", "Electrolytes"], "answer": 0, "explain": "Prostaglandins make the uterine muscle contract to shed its lining."}
+      ],
+      "tracking": [
+        {"q": "Which logging habit makes data most useful?", "options": ["Logging everything, but only on bad days", "Logging a small set every day", "Logging only period dates"], "answer": 1, "explain": "A small set logged daily gives a usable baseline. Only logging bad days makes every day look bad."},
+        {"q": "Why do period start dates need to be accurate?", "options": ["Every prediction is anchored to them", "They are your password", "They are shown to partners"], "answer": 0, "explain": "A start date logged two days late shifts the whole forward projection."}
+      ]
+    },
+    "course-ttc": {
+      "window": [
+        {"q": "How long can sperm survive in fertile cervical mucus?", "options": ["About 12 hours", "Up to about five days", "Two weeks"], "answer": 1, "explain": "Sperm can survive up to about five days in fertile mucus."},
+        {"q": "How long does an egg survive after release?", "options": ["Under a day", "Three days", "Five days"], "answer": 0, "explain": "An egg survives roughly 12 to 24 hours."}
+      ],
+      "signals": [
+        {"q": "Which signal only confirms ovulation after it has happened?", "options": ["An LH test", "Basal body temperature", "Cervical mucus"], "answer": 1, "explain": "Temperature rises after ovulation, so it confirms rather than predicts."},
+        {"q": "An LH surge comes about how long before ovulation?", "options": ["24 to 36 hours", "Five days", "At the same moment"], "answer": 0, "explain": "That lead time is why a positive LH test is predictive."}
+      ],
+      "frequency": [
+        {"q": "Which approach gives close to the maximum chance without needing the exact day?", "options": ["Sex every one to two days across the window", "One attempt on the predicted day", "Abstaining until a positive test"], "answer": 0, "explain": "Frequency across the window removes the need to be right about which day it is."},
+        {"q": "Why does frequency beat precision?", "options": ["Calendars cannot pin down the exact day", "Sperm only live a day", "Eggs release repeatedly"], "answer": 0, "explain": "Ovulation timing varies, so aiming at one date risks missing the window."}
+      ],
+      "expectations": [
+        {"q": "About what share of couples conceive within a year of regular unprotected sex?", "options": ["About 80%", "About 30%", "About 99%"], "answer": 0, "explain": "Roughly 80% within a year and around 90% within two."},
+        {"q": "For a healthy couple in their late twenties, the chance per cycle is about:", "options": ["One in four or five", "One in two", "One in a hundred"], "answer": 0, "explain": "Several months without success is statistically ordinary."}
+      ],
+      "help": [
+        {"q": "Under 35 with no known factors, assessment is usually advised after:", "options": ["Three months", "Twelve months", "Three years"], "answer": 1, "explain": "Twelve months of trying under age 35."},
+        {"q": "At 35 or over, assessment is usually advised after:", "options": ["Six months", "Twelve months", "Two years"], "answer": 0, "explain": "Six months at 35 or over, and straight away if there are known factors."}
+      ]
+    },
+    "course-pregnancy": {
+      "dating": [
+        {"q": "Pregnancy is dated from:", "options": ["Conception", "The first day of the last period", "A positive test"], "answer": 1, "explain": "That is why the first two weeks precede conception."},
+        {"q": "What does a first-trimester scan do to the due date?", "options": ["Nothing", "Redates it when it disagrees meaningfully", "Fixes it to exactly 40 weeks"], "answer": 1, "explain": "A first-trimester ultrasound is accurate to within about five days and is used to redate."}
+      ],
+      "first": [
+        {"q": "Which supplement is advised daily, ideally from before conception?", "options": ["400 micrograms of folic acid", "Vitamin K", "100 mg of iron"], "answer": 0, "explain": "Folic acid matters most while the neural tube is closing."},
+        {"q": "Nausea so severe you cannot keep fluids down is:", "options": ["Normal and best endured", "Hyperemesis gravidarum, which needs treatment", "Braxton Hicks"], "answer": 1, "explain": "Hyperemesis needs treatment, not tolerance."}
+      ],
+      "second": [
+        {"q": "The anatomy scan is around which weeks?", "options": ["8 to 10", "18 to 22", "36 to 38"], "answer": 1, "explain": "It checks growth, placenta and the development of major organs."},
+        {"q": "When does glucose screening for gestational diabetes usually happen?", "options": ["Weeks 24 to 28", "Week 8", "After birth"], "answer": 0, "explain": "Usually between weeks 24 and 28."}
+      ],
+      "third": [
+        {"q": "If your baby's usual movements reduce, you should:", "options": ["Wait a day to see", "Contact your midwife or maternity unit the same day", "Drink something cold first"], "answer": 1, "explain": "Same day, every time, without waiting and without trying cold drinks or sugar first."},
+        {"q": "Braxton Hicks tightenings are:", "options": ["Irregular and do not intensify", "Steadily stronger and closer together", "Always very painful"], "answer": 0, "explain": "Labour contractions get longer, stronger and closer together regardless of what you do."}
+      ],
+      "warnings": [
+        {"q": "Which needs same-day contact?", "options": ["Mild round ligament twinges", "Any vaginal bleeding", "Heartburn"], "answer": 1, "explain": "Any bleeding, severe headache, visual changes, sudden swelling or reduced movements."},
+        {"q": "Your waters break and the fluid is green or bloody. You should:", "options": ["Wait for contractions", "Call immediately", "Rest at home"], "answer": 1, "explain": "Green or bloody fluid needs immediate contact."}
+      ]
+    },
+    "course-pcos-endo": {
+      "pcos-criteria": [
+        {"q": "PCOS is usually diagnosed from how many of the three features?", "options": ["One", "Two", "All three"], "answer": 1, "explain": "Two of three: irregular ovulation, androgen excess, polycystic-appearing ovaries."},
+        {"q": "Do follicles seen on a scan alone diagnose PCOS?", "options": ["Yes", "No"], "answer": 1, "explain": "The follicles are not cysts, and a scan alone does not diagnose the syndrome."}
+      ],
+      "pcos-manage": [
+        {"q": "Which is now generally first line for ovulation induction in PCOS?", "options": ["Letrozole", "Antibiotics", "Metformin alone"], "answer": 0, "explain": "Letrozole is generally ahead of clomifene."},
+        {"q": "Insulin resistance in PCOS is commonly addressed with:", "options": ["Metformin and movement", "Cutting out all carbohydrates", "Antihistamines"], "answer": 0, "explain": "Movement improves insulin sensitivity, and metformin is the usual medication."}
+      ],
+      "endo-pattern": [
+        {"q": "Period pain that starts days before the bleeding is:", "options": ["Normal for everyone", "Part of the pattern that should prompt referral", "Never relevant"], "answer": 1, "explain": "It is one of the features worth raising, with pain that limits daily activity."},
+        {"q": "How well does the extent of endometriosis predict pain?", "options": ["Very closely", "Poorly", "Only when imaging is abnormal"], "answer": 1, "explain": "Minimal disease can hurt severely and extensive disease can be silent."}
+      ],
+      "advocacy": [
+        {"q": "What changes clinical decisions most in a short appointment?", "options": ["Words like awful or unbearable", "Dated symptoms and what you can no longer do", "Online diagnoses"], "answer": 1, "explain": "Effects change decisions. Adjectives do not."},
+        {"q": "If pain is dismissed without examination or a plan:", "options": ["Stop seeking help", "Ask for a second opinion", "Only self-treat"], "answer": 1, "explain": "A second opinion is reasonable and normal."}
+      ]
+    },
+    "course-perimenopause": {
+      "timeline": [
+        {"q": "Menopause is diagnosed after:", "options": ["Three months without a period", "Twelve consecutive months without a period", "Six skipped cycles"], "answer": 1, "explain": "It is a retrospective point after twelve consecutive months."},
+        {"q": "Early transition is marked by:", "options": ["A persistent cycle-length change of seven days or more", "Hot flashes only", "Absent periods"], "answer": 0, "explain": "Late transition brings gaps of 60 days or longer."}
+      ],
+      "symptoms": [
+        {"q": "During perimenopause oestrogen:", "options": ["Falls smoothly", "Fluctuates", "Stays constant"], "answer": 1, "explain": "That is why symptoms come and go unpredictably."},
+        {"q": "Periods often get ___ before they get lighter.", "options": ["Heavier", "Shorter", "Painless"], "answer": 0, "explain": "Heavier bleeding is common early in the transition."}
+      ],
+      "treatment": [
+        {"q": "Which is the most effective treatment for hot flashes and night sweats?", "options": ["Hormone therapy", "Cooling pillows", "Supplement stacks"], "answer": 0, "explain": "It is the most effective, and it also protects bone density."},
+        {"q": "If you have a uterus, oestrogen therapy needs:", "options": ["A progestogen alongside it", "Nothing extra", "Antibiotics"], "answer": 0, "explain": "The progestogen protects the lining of the uterus."}
+      ],
+      "beyond": [
+        {"q": "Contraception is still needed until:", "options": ["Periods first become irregular", "Twelve months after the final period", "Hot flashes begin"], "answer": 1, "explain": "Ovulation still happens intermittently during perimenopause."},
+        {"q": "Which treats vaginal dryness with minimal absorption?", "options": ["Local vaginal oestrogen", "Oral steroids", "Antidepressants only"], "answer": 0, "explain": "It is suitable for many people who cannot take systemic therapy."}
+      ]
+    }
+  }
+}

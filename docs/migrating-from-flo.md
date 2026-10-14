@@ -120,6 +120,7 @@ same file twice is safe — matching entries aren't duplicated.
 | **Period & ovulation predictions** | Calendar-based prediction with a *window*, not a single date — the app tells you its own confidence and widens the window when your cycles are irregular, rather than pretending to a precision the math doesn't support |
 | **100+ trackable symptoms & events** | Flow, mood, physical symptoms, discharge, sex, tests, lifestyle, medication, and free-form notes, organized into a single daily log sheet |
 | **Calendar** | Month view showing logged periods, predicted periods, the fertile window, and estimated ovulation day, color-coded |
+| **Question of the day** | One short cycle-and-fertility question on the Today screen, answered once, with the explanation and a day streak. Every answer is a fact stated in the app's own library |
 | **Custom reminders** | Period-coming, period-late, ovulation-coming, fertile-window-opens, plus daily reminders (medication, logging, water) — each with its own time of day |
 | **Secret Chats** | An anonymous community, organized by topic (cycle, TTC, pregnancy, PCOS, endometriosis, birth control, mood, perimenopause, sex, general). You post under a generated handle, never your account name or email; contact details get automatically stripped from posts |
 | **Anonymous Mode** | A full account with no name or email attached, from signup onward |
@@ -143,7 +144,8 @@ as local entitlement records.
 | **Symptom predictions** | A 14-day forward look at which symptoms you've historically logged most in each upcoming phase |
 | **Symptom Checker** | Three questionnaires — PCOS, endometriosis, perimenopause — that compare your answers (several pre-filled from your own logged cycle data) against the pattern each condition commonly presents with. Results are always framed as "this is not a diagnosis," with a plain explanation and next steps, never a percentage chance of having a condition |
 | **Health Assistant** | Unlimited chat, grounded in the app's own article library. Runs on a local model first if one is available on your machine, so your questions never leave your device by default; only falls back to a cloud model if you've explicitly configured one, and even then sends only your cycle day/phase — never raw logs or free-text notes |
-| **Full article & course library** | All 40 articles (each citing the public clinical guidance — ACOG, NHS, NICHD, Mayo Clinic — it was checked against) plus 5 multi-lesson video-style courses with progress tracking |
+| **Full article & course library** | All 40 articles (each citing the public clinical guidance — ACOG, NHS, NICHD, Mayo Clinic — it was checked against) plus 5 multi-lesson text courses with a short quiz after every lesson and progress tracking |
+| **Lesson quizzes** | Two questions after every course lesson, scored on the server with an explanation for each answer. Passing (70%) marks the lesson complete, and your best score is kept |
 | **Six-month clinician report** | A one-page PDF summarizing your cycle lengths, symptom patterns by phase, and any saved Symptom Checker results — built to make a short appointment more productive |
 | **Detailed pregnancy tracking** | Week-by-week development detail, a kick counter, and a contraction timer (labour vs. Braxton Hicks guidance included) |
 | **Full Partner Mode** | Choose exactly which of six data categories a partner sees — cycle phase, period dates, fertile window, symptoms, mood, pregnancy progress — each toggled independently |
